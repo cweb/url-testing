@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <title>run url tests</title>
+  <link rel="stylesheet" type="text/css" href="../../css/tests.css">
+  <link rel="stylesheet" href="http://w3c-test.org/resources/testharness.css">
+  <script src="http://w3c-test.org/resources/testharness.js"></script>
+  <script src="http://w3c-test.org/resources/testharnessreport.js"></script>
+  <script src="test.js"></script>
+</head>
+<body>
+  <h1>Note</h1>
+  <p>This page is still a work in progress.  TODO:</p>
+  <ul>
+    <li>Improve the expected results of each test case</li>
+    <li>Provide a descriptive comment with each test case</li>
+    <li>Reduce test cases, remove duplication</li>
+    <li>Hook up server-side GET request processing</li>
+    <li>correlate expected DOM results with HTTP request</li>
+  </ul>
+  <div id="log"></div>
+</body>
+<script>
+
+
+// Start your engines
+init();
+
+for (var i = 0; i < data.tests.group.length; i++) {
+  var group = data.tests.group[i];
+
+  for (var j = 0, len = group.test.length; j < len; j++) {
+    var testcase = group.test[j];
+    if (group.name == "anchor" ||
+        group.name == "host" ||
+        group.name == "idna2008" ||
+        group.name == "idna2003" ||
+        group.name == "ipv4" ||
+        group.name == "ipv6" ||
+        group.name == "mailto" ||
+        group.name == "path-url" ||
+        group.name == "path" ||
+        group.name == "port" ||
+        group.name == "query" ||
+        group.name == "scheme" ||
+        group.name == "standard-url" 
+        ) {
+        test_simple(group.name + " - " + testcase.id + ": testing \"" + testcase.url + 
+                    "\"expecting \"" + testcase.expect_url + "\"", 
+                    testcase.url,
+                    testcase.expect_url);
+    }
+    else if (group.name == "file-http-base" ||
+             group.name == "file" ||
+             group.name == "relative-unix" ||
+             group.name == "relative-win" ||
+             group.name == "relative" ||
+             group.name == "trivial" 
+             ) {
+        test_relative(group.name + " - " + testcase.id, 
+                      testcase.base,
+                      testcase.rel,
+                      testcase.expect_rel);
+    }
+    else if (group.name == "segments-from-data-url" ||
+             group.name == "sengments" ||
+             group.name == "trivial-segments" 
+             ) {
+        test_components_relative(group.name + " - " + testcase.id, 
+                        testcase.base,
+                        testcase.rel,
+                        testcase.expect_scheme,
+                        testcase.expect_host,
+                        testcase.expect_port,
+                        testcase.expect_path,
+                        testcase.expect_query,
+                        testcase.expect_fragment);
+    }
+    else if (group.name == "Miscellaneous test cases"
+             ) {
+        test_components(group.name + " - " + testcase.id, 
+                        testcase.url,
+                        testcase.expect_url,
+                        testcase.expect_scheme,
+                        testcase.expect_host,
+                        testcase.expect_port,
+                        testcase.expect_path,
+                        testcase.expect_query,
+                        testcase.expect_fragment);
+    }
+  }
+}
+</script>
+</html>
