@@ -461,6 +461,12 @@
         "desc": "Test cases from Webkit's fast/url/host.js",
         "test": [
         {
+          "id": "1000",
+          "name": "A pathless URL",
+          "url": "http://google.com",
+          "expect_url": "http://google.com"
+        },
+        {
           "id": "64",
           "name": "",
           "url": "http://GoOgLe.CoM/",
