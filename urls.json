@@ -2661,7 +2661,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "foo.com",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -2673,7 +2673,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2685,7 +2685,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2697,7 +2697,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "a:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": " foo.com",
           "expect_query": "",
           "expect_fragment": ""
@@ -2721,7 +2721,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "f",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/c",
           "expect_query": "",
           "expect_fragment": ""
@@ -2757,7 +2757,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "f",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/c",
           "expect_query": "",
           "expect_fragment": ""
@@ -2769,7 +2769,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2781,7 +2781,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2793,7 +2793,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2805,7 +2805,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2817,7 +2817,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2829,7 +2829,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2841,7 +2841,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "data:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "text/plain,baseURL",
           "expect_query": "",
           "expect_fragment": ""
@@ -2853,7 +2853,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "data:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "text/plain,baseURL",
           "expect_query": "",
           "expect_fragment": ""
@@ -2865,7 +2865,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2877,7 +2877,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2889,7 +2889,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2901,7 +2901,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2913,7 +2913,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2925,7 +2925,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2937,7 +2937,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2949,7 +2949,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2961,7 +2961,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2973,7 +2973,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2985,7 +2985,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -2997,7 +2997,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3009,7 +3009,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3021,7 +3021,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3033,7 +3033,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "data:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/:23",
           "expect_query": "",
           "expect_fragment": ""
@@ -3045,7 +3045,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3057,7 +3057,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3069,7 +3069,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3081,7 +3081,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "//",
           "expect_query": "",
           "expect_fragment": ""
@@ -3141,7 +3141,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "d",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3153,7 +3153,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "foo.com",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "//@",
           "expect_query": "",
           "expect_fragment": ""
@@ -3165,7 +3165,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "foo.com",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3177,7 +3177,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "a",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/b:c/d@foo.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3189,7 +3189,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3201,7 +3201,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/bar.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3213,7 +3213,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/////////",
           "expect_query": "",
           "expect_fragment": ""
@@ -3225,7 +3225,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/////////bar.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3237,7 +3237,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "////://///",
           "expect_query": "",
           "expect_fragment": ""
@@ -3249,7 +3249,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "c:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo",
           "expect_query": "",
           "expect_fragment": ""
@@ -3261,7 +3261,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3273,7 +3273,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/path;a",
           "expect_query": "??e",
           "expect_fragment": "#f#g"
@@ -3285,7 +3285,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/abcd",
           "expect_query": "?efgh?ijkl",
           "expect_fragment": ""
@@ -3297,7 +3297,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/abcd",
           "expect_query": "",
           "expect_fragment": "#foo?bar"
@@ -3309,7 +3309,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "data:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "text/[61:24:74]:98",
           "expect_query": "",
           "expect_fragment": ""
@@ -3321,7 +3321,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3333,7 +3333,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3345,7 +3345,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3357,7 +3357,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3369,7 +3369,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3381,7 +3381,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3393,7 +3393,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3405,7 +3405,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "[2001::1]",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3417,7 +3417,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": "http:",
           "expect_host": "[2001::1]",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3429,7 +3429,7 @@
           "base": "data:text/plain,baseURL",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3460,7 +3460,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/foo.com",
           "expect_query": "",
           "expect_fragment": ""
@@ -3472,7 +3472,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:foo.com",
           "expect_query": "",
           "expect_fragment": ""
@@ -3484,7 +3484,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/foo.com",
           "expect_query": "",
           "expect_fragment": ""
@@ -3496,7 +3496,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "a:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": " foo.com",
           "expect_query": "",
           "expect_fragment": ""
@@ -3520,7 +3520,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "f",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/c",
           "expect_query": "",
           "expect_fragment": ""
@@ -3556,7 +3556,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "f",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/c",
           "expect_query": "",
           "expect_fragment": ""
@@ -3568,7 +3568,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3580,7 +3580,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3592,7 +3592,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3604,7 +3604,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3616,7 +3616,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3628,7 +3628,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3639,7 +3639,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/bar",
           "expect_query": "",
           "expect_fragment": ""
@@ -3651,7 +3651,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/bar",
           "expect_query": "",
           "expect_fragment": ""
@@ -3663,7 +3663,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:foo.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3675,7 +3675,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:foo.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3687,7 +3687,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:",
           "expect_query": "",
           "expect_fragment": ""
@@ -3699,7 +3699,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:a",
           "expect_query": "",
           "expect_fragment": ""
@@ -3711,7 +3711,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3723,7 +3723,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3735,7 +3735,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:",
           "expect_query": "",
           "expect_fragment": ""
@@ -3747,7 +3747,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/bar",
           "expect_query": "",
           "expect_fragment": ""
@@ -3759,7 +3759,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/bar",
           "expect_query": "",
           "expect_fragment": "#/"
@@ -3771,7 +3771,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/bar",
           "expect_query": "",
           "expect_fragment": "#\\\\"
@@ -3783,7 +3783,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/bar",
           "expect_query": "",
           "expect_fragment": "#;?"
@@ -3795,7 +3795,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/bar",
           "expect_query": "",
           "expect_fragment": ""
@@ -3807,7 +3807,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3819,7 +3819,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:23",
           "expect_query": "",
           "expect_fragment": ""
@@ -3831,7 +3831,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/:23",
           "expect_query": "",
           "expect_fragment": ""
@@ -3843,7 +3843,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -3855,7 +3855,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/::",
           "expect_query": "",
           "expect_fragment": ""
@@ -3867,7 +3867,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/::23",
           "expect_query": "",
           "expect_fragment": ""
@@ -3879,7 +3879,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "//",
           "expect_query": "",
           "expect_fragment": ""
@@ -3903,7 +3903,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/:@c:29",
           "expect_query": "",
           "expect_fragment": ""
@@ -3939,7 +3939,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "d",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3951,7 +3951,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "foo.com",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "//@",
           "expect_query": "",
           "expect_fragment": ""
@@ -3963,7 +3963,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "foo.com",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3975,7 +3975,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "a",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/b:c/d@foo.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3987,7 +3987,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -3999,7 +3999,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/bar.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -4011,7 +4011,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/////////",
           "expect_query": "",
           "expect_fragment": ""
@@ -4023,7 +4023,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/////////bar.com/",
           "expect_query": "",
           "expect_fragment": ""
@@ -4035,7 +4035,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "foo:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "////://///",
           "expect_query": "",
           "expect_fragment": ""
@@ -4047,7 +4047,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "c:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo",
           "expect_query": "",
           "expect_fragment": ""
@@ -4059,7 +4059,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/bar",
           "expect_query": "",
           "expect_fragment": ""
@@ -4071,7 +4071,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/path;a",
           "expect_query": "??e",
           "expect_fragment": "#f#g"
@@ -4083,7 +4083,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/abcd",
           "expect_query": "?efgh?ijkl",
           "expect_fragment": ""
@@ -4095,7 +4095,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/abcd",
           "expect_query": "",
           "expect_fragment": "#foo?bar"
@@ -4107,7 +4107,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/[61:24:74]:98",
           "expect_query": "",
           "expect_fragment": ""
@@ -4119,7 +4119,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -4131,7 +4131,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.org",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/foo/[61:27]/:foo",
           "expect_query": "",
           "expect_fragment": ""
@@ -4143,7 +4143,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -4155,7 +4155,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -4167,7 +4167,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -4179,7 +4179,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -4191,7 +4191,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -4203,7 +4203,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "[2001::1]",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -4215,7 +4215,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "[2001::1]",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -4227,7 +4227,7 @@
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": ":",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "",
           "expect_query": "",
           "expect_fragment": ""
@@ -4414,7 +4414,7 @@
           "base": "http://example.org/foo/bar",
           "expect_scheme": "http:",
           "expect_host": "example.com",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -4700,7 +4700,7 @@
           "expect_url": "http://user:info@/",
           "expect_scheme": "http:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -4712,7 +4712,7 @@
           "expect_url": "http://user@/",
           "expect_scheme": "http:",
           "expect_host": "",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "/",
           "expect_query": "",
           "expect_fragment": ""
@@ -4724,7 +4724,7 @@
           "expect_url": "$:",
           "expect_scheme": "$:",
           "expect_host": "foo",
-          "expect_port": "0",
+          "expect_port": "",
           "expect_path": "bar",
           "expect_query": "",
           "expect_fragment": ""
