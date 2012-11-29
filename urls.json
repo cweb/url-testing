@@ -69,189 +69,189 @@
         "desc": "Test cases from Webkit's fast/url/file-http-base.js",
         "test": [
         {
-          "id": "10",
+          "id": "1",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:c:\\\\foo\\\\bar.html",
           "expect_rel": "file:///C:/foo/bar.html"
         },
         {
-          "id": "11",
+          "id": "2",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "  File:c|////foo\\\\bar.html",
           "expect_rel": "file:///C:////foo/bar.html"
         },
         {
-          "id": "12",
+          "id": "3",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:",
           "expect_rel": "file:///"
         },
         {
-          "id": "13",
+          "id": "4",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:UNChost/path",
           "expect_rel": "file://unchost/path"
         },
         {
-          "id": "14",
+          "id": "5",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "c:\\\\foo\\\\bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "15",
+          "id": "6",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "C|/foo/bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "16",
+          "id": "7",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "/C|\\\\foo\\\\bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "17",
+          "id": "8",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "//C|/foo/bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "18",
+          "id": "9",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "//server/file",
           "expect_rel": "file://server/file"
         },
         {
-          "id": "19",
+          "id": "10",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "\\\\\\\\server\\\\file",
           "expect_rel": "file://server/file"
         },
         {
-          "id": "20",
+          "id": "11",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "/\\\\server/file",
           "expect_rel": "file://server/file"
         },
         {
-          "id": "21",
+          "id": "12",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:c:foo/bar.html",
           "expect_rel": "file:///C:/foo/bar.html"
         },
         {
-          "id": "22",
+          "id": "13",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:/\\\\/\\\\C:\\\\\\\\//foo\\\\bar.html",
           "expect_rel": "file:///C:////foo/bar.html"
         },
         {
-          "id": "23",
+          "id": "14",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:///foo/bar.txt",
           "expect_rel": "file:///foo/bar.txt"
         },
         {
-          "id": "24",
+          "id": "15",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "FILE:/\\\\/\\\\7:\\\\\\\\//foo\\\\bar.html",
           "expect_rel": "file://7:////foo/bar.html"
         },
         {
-          "id": "25",
+          "id": "16",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:filer/home\\\\me",
           "expect_rel": "file://filer/home/me"
         },
         {
-          "id": "26",
+          "id": "17",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:///C:/foo/../../../bar.html",
           "expect_rel": "file:///C:/bar.html"
         },
         {
-          "id": "27",
+          "id": "18",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:///C:/asdf#\\%c2",
           "expect_rel": "file:///C:/asdf#\\%ef\\%bf\\%bd"
         },
         {
-          "id": "28",
+          "id": "19",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:///home/me",
           "expect_rel": "file:///home/me"
         },
         {
-          "id": "29",
+          "id": "20",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:c:\\\\foo\\\\bar.html",
           "expect_rel": "file:///c:/foo/bar.html"
         },
         {
-          "id": "30",
+          "id": "21",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file:c|//foo\\\\bar.html",
           "expect_rel": "file:///c%7C//foo/bar.html"
         },
         {
-          "id": "31",
+          "id": "22",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "//",
           "expect_rel": "file:///"
         },
         {
-          "id": "32",
+          "id": "23",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "///",
           "expect_rel": "file:///"
         },
         {
-          "id": "33",
+          "id": "24",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "///test",
           "expect_rel": "file:///test"
         },
         {
-          "id": "34",
+          "id": "25",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file://test",
           "expect_rel": "file://test/"
         },
         {
-          "id": "35",
+          "id": "26",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file://localhost/",
           "expect_rel": "file://localhost/"
         },
         {
-          "id": "36",
+          "id": "27",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "rel": "file://localhost/test",
@@ -265,189 +265,189 @@
         "desc": "Test cases from Webkit's fast/url/file.js",
         "test": [
         {
-          "id": "37",
+          "id": "1",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:c:\\\\foo\\\\bar.html",
           "expect_rel": "file:///C:/foo/bar.html"
         },
         {
-          "id": "38",
+          "id": "2",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "  File:c|////foo\\\\bar.html",
           "expect_rel": "file:///C:////foo/bar.html"
         },
         {
-          "id": "39",
+          "id": "3",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:",
           "expect_rel": "file:///"
         },
         {
-          "id": "40",
+          "id": "4",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:UNChost/path",
           "expect_rel": "file://unchost/path"
         },
         {
-          "id": "41",
+          "id": "5",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "c:\\\\foo\\\\bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "42",
+          "id": "6",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "C|/foo/bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "43",
+          "id": "7",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "/C|\\\\foo\\\\bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "44",
+          "id": "8",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "//C|/foo/bar",
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "45",
+          "id": "9",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "//server/file",
           "expect_rel": "file://server/file"
         },
         {
-          "id": "46",
+          "id": "10",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "\\\\\\\\server\\\\file",
           "expect_rel": "file://server/file"
         },
         {
-          "id": "47",
+          "id": "11",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "/\\\\server/file",
           "expect_rel": "file://server/file"
         },
         {
-          "id": "48",
+          "id": "12",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:c:foo/bar.html",
           "expect_rel": "file:///C:/foo/bar.html"
         },
         {
-          "id": "49",
+          "id": "13",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:/\\\\/\\\\C:\\\\\\\\//foo\\\\bar.html",
           "expect_rel": "file:///C:////foo/bar.html"
         },
         {
-          "id": "50",
+          "id": "14",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:///foo/bar.txt",
           "expect_rel": "file:///foo/bar.txt"
         },
         {
-          "id": "51",
+          "id": "15",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "FILE:/\\\\/\\\\7:\\\\\\\\//foo\\\\bar.html",
           "expect_rel": "file://7:////foo/bar.html"
         },
         {
-          "id": "52",
+          "id": "16",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:filer/home\\\\me",
           "expect_rel": "file://filer/home/me"
         },
         {
-          "id": "53",
+          "id": "17",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:///C:/foo/../../../bar.html",
           "expect_rel": "file:///C:/bar.html"
         },
         {
-          "id": "54",
+          "id": "18",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:///C:/asdf#\\%c2",
           "expect_rel": "file:///C:/asdf#\\%ef\\%bf\\%bd"
         },
         {
-          "id": "55",
+          "id": "19",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:///home/me",
           "expect_rel": "file:///home/me"
         },
         {
-          "id": "56",
+          "id": "20",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:c:\\\\foo\\\\bar.html",
           "expect_rel": "file:///c:/foo/bar.html"
         },
         {
-          "id": "57",
+          "id": "21",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file:c|//foo\\\\bar.html",
           "expect_rel": "file:///c%7C//foo/bar.html"
         },
         {
-          "id": "58",
+          "id": "22",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "//",
           "expect_rel": "file:///"
         },
         {
-          "id": "59",
+          "id": "23",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "///",
           "expect_rel": "file:///"
         },
         {
-          "id": "60",
+          "id": "24",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "///test",
           "expect_rel": "file:///test"
         },
         {
-          "id": "61",
+          "id": "25",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file://test",
           "expect_rel": "file://test/"
         },
         {
-          "id": "62",
+          "id": "26",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file://localhost/",
           "expect_rel": "file://localhost/"
         },
         {
-          "id": "63",
+          "id": "27",
           "name": "",
           "base": "file:///tmp/mock/path",
           "rel": "file://localhost/test",
@@ -461,265 +461,265 @@
         "desc": "Test cases from Webkit's fast/url/host.js",
         "test": [
         {
-          "id": "1000",
+          "id": "1",
           "name": "A pathless URL",
           "url": "http://google.com",
           "expect_url": "http://google.com"
         },
         {
-          "id": "64",
+          "id": "2",
           "name": "",
           "url": "http://GoOgLe.CoM/",
           "expect_url": "http://google.com/"
         },
         {
-          "id": "65",
+          "id": "3",
           "name": "",
           "url": "http://Goo%20 goo%7C|.com/",
           "expect_url": "http://goo%20%20goo%7C%7C.com/"
         },
         {
-          "id": "66",
+          "id": "4",
           "name": "",
           "url": "http://GOO\u00a0\u3000goo.com/",
           "expect_url": "http://goo%20%20goo.com/"
         },
         {
-          "id": "67",
+          "id": "5",
           "name": "",
           "url": "http://GOO\u200b\u2060\ufeffgoo.com/",
           "expect_url": "http://googoo.com/"
         },
         {
-          "id": "68",
+          "id": "6",
           "name": "",
           "url": "http://www.foo\u3002\" + \"bar.com/",
           "expect_url": "http://www.foo.bar.com/"
         },
         {
-          "id": "69",
+          "id": "7",
           "name": "",
           "url": "http://\ufdd0zyx.com/",
           "expect_url": "http://%EF%BF%BDzyx.com/"
         },
         {
-          "id": "70",
+          "id": "8",
           "name": "",
           "url": "http://%ef%b7%90zyx.com/",
           "expect_url": "http://%EF%BF%BDzyx.com/"
         },
         {
-          "id": "71",
+          "id": "9",
           "name": "",
           "url": "http://\uff27\uff4f.com/",
           "expect_url": "http://go.com/"
         },
         {
-          "id": "72",
+          "id": "10",
           "name": "",
           "url": "http://\uff05\uff14\uff11.com/",
           "expect_url": "http://a.com/"
         },
         {
-          "id": "73",
+          "id": "11",
           "name": "",
           "url": "http://%ef%bc%85%ef%bc%94%ef%bc%91.com/",
           "expect_url": "http://a.com/"
         },
         {
-          "id": "74",
+          "id": "12",
           "name": "",
           "url": "http://\uff05\uff10\uff10.com/",
           "expect_url": "http://%00.com/"
         },
         {
-          "id": "75",
+          "id": "13",
           "name": "",
           "url": "http://%ef%bc%85%ef%bc%90%ef%bc%90.com/",
           "expect_url": "http://%00.com/"
         },
         {
-          "id": "76",
+          "id": "14",
           "name": "",
           "url": "http://\u4f60\u597d\u4f60\u597d/",
           "expect_url": "http://xn--6qqa088eba/"
         },
         {
-          "id": "77",
+          "id": "15",
           "name": "",
           "url": "http://%E4%BD%A0%E5%A5%BD\u4f60\u597d/",
           "expect_url": "http://xn--6qqa088eba/"
         },
         {
-          "id": "78",
+          "id": "16",
           "name": "",
           "url": "http://%zz%66%a/",
           "expect_url": "http://%25zzf%25a/"
         },
         {
-          "id": "79",
+          "id": "17",
           "name": "",
           "url": "http://%25/",
           "expect_url": "http://%25/"
         },
         {
-          "id": "80",
+          "id": "18",
           "name": "",
           "url": "http://hello%00/",
           "expect_url": "http://hello%00/"
         },
         {
-          "id": "81",
+          "id": "19",
           "name": "",
           "url": "http://%30%78%63%30%2e%30%32%35%30.01/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "82",
+          "id": "20",
           "name": "",
           "url": "http://%30%78%63%30%2e%30%32%35%30.01%2e/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "83",
+          "id": "21",
           "name": "",
           "url": "http://%3g%78%63%30%2e%30%32%35%30%2E.01/",
           "expect_url": "http://%253gxc0.0250..01/"
         },
         {
-          "id": "84",
+          "id": "22",
           "name": "",
           "url": "http://192.168.0.1 hello/",
           "expect_url": "http://192.168.0.1%20hello/"
         },
         {
-          "id": "85",
+          "id": "23",
           "name": "",
           "url": "http://\uff10\uff38\uff43\uff10\uff0e\uff10\uff12\uff15\uff10\uff0e\uff10\uff11/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "86",
+          "id": "24",
           "name": "",
           "url": "http://192.168.0.257/",
           "expect_url": "http://192.168.0.257/"
         },
         {
-          "id": "87",
+          "id": "25",
           "name": "",
           "url": "http://[google.com.]/",
           "expect_url": "http://[google.com]/"
         },
         {
-          "id": "88",
+          "id": "26",
           "name": "",
           "url": "http://\u0442(",
           "expect_url": "http://xn--%28-7ed/"
         },
         {
-          "id": "89",
+          "id": "27",
           "name": "",
           "url": "http://go\\@ogle.com/",
           "expect_url": "http://go@ogle.com/"
         },
         {
-          "id": "90",
+          "id": "28",
           "name": "",
           "url": "http://go/@ogle.com/",
           "expect_url": "http://go@ogle.com/"
         },
         {
-          "id": "91",
+          "id": "29",
           "name": "",
           "url": "http://www.lookout.net::==80::==443::/",
           "expect_url": "http://lookout.net/"
         },
         {
-          "id": "92",
+          "id": "30",
           "name": "",
           "url": "http://www.lookout.net::80::443/",
           "expect_url": "http://lookout.net/"
         },
         {
-          "id": "93",
+          "id": "31",
           "name": "",
           "url": "http://\\",
           "expect_url": "http://\\"
         },
         {
-          "id": "94",
+          "id": "32",
           "name": "",
           "url": "http://\\\\/",
           "expect_url": "http://."
         },
         {
-          "id": "95",
+          "id": "33",
           "name": "",
           "url": "http://\\./",
           "expect_url": "http://."
         },
         {
-          "id": "96",
+          "id": "34",
           "name": "",
           "url": "http:////:@/",
           "expect_url": "http://."
         },
         {
-          "id": "97",
+          "id": "35",
           "name": "",
           "url": "http://\\google.com/foo",
           "expect_url": "http://google.com/foo"
         },
         {
-          "id": "98",
+          "id": "36",
           "name": "",
           "url": "http://\\\\google.com/foo",
           "expect_url": "http://google.com/foo"
         },
         {
-          "id": "99",
+          "id": "37",
           "name": "",
           "url": "http:////asdf@/",
           "expect_url": "http://."
         },
         {
-          "id": "100",
+          "id": "38",
           "name": "",
           "url": "http:////:81/",
           "expect_url": "http://."
         },
         {
-          "id": "101",
+          "id": "39",
           "name": "",
           "url": "http://://",
           "expect_url": "http://."
         },
         {
-          "id": "102",
+          "id": "40",
           "name": "",
           "url": "http://c:/",
           "expect_url": "http://."
         },
         {
-          "id": "103",
+          "id": "41",
           "name": "",
           "url": "http://xxxx:/",
           "expect_url": "http://."
         },
         {
-          "id": "104",
+          "id": "42",
           "name": "",
           "url": "http://.:./",
           "expect_url": "http://."
         },
         {
-          "id": "105",
+          "id": "43",
           "name": "",
           "url": "http://////@google.com/",
           "expect_url": "http://."
         },
         {
-          "id": "106",
+          "id": "44",
           "name": "",
           "url": "http://@google.com/",
           "expect_url": "http://google.com/"
@@ -732,175 +732,175 @@
         "desc": "Test cases from Webkit's fast/url/idna2003.js",
         "test": [
         {
-          "id": "107",
+          "id": "1",
           "name": "",
           "url": "http://fa\u00DF.de/",
           "expect_url": "http://fass.de/"
         },
         {
-          "id": "108",
+          "id": "2",
           "name": "",
           "url": "http://\u03B2\u03CC\u03BB\u03BF\u03C2.com/",
           "expect_url": "http://xn--nxasmq6b.com/"
         },
         {
-          "id": "109",
+          "id": "3",
           "name": "",
           "url": "http://\u0DC1\u0DCA\u200D\u0DBB\u0DD3.com/",
           "expect_url": "http://xn--10cl1a0b.com/"
         },
         {
-          "id": "110",
+          "id": "4",
           "name": "",
           "url": "http://\u0646\u0627\u0645\u0647\u200C\u0627\u06CC.com/",
           "expect_url": "http://xn--mgba3gch31f.com/"
         },
         {
-          "id": "111",
+          "id": "5",
           "name": "",
           "url": "http://www.loo\u0138out.net/",
           "expect_url": "http://www.xn--looout-5bb.net/"
         },
         {
-          "id": "112",
+          "id": "6",
           "name": "",
           "url": "http://\u15EF\u15EF\u15EF.lookout.net/",
           "expect_url": "http://xn--1qeaa.lookout.net/"
         },
         {
-          "id": "113",
+          "id": "7",
           "name": "",
           "url": "http://www.lookout.\u0441\u043E\u043C/",
           "expect_url": "http://www.lookout.xn--l1adi/"
         },
         {
-          "id": "114",
+          "id": "8",
           "name": "",
           "url": "http://www.lookout.net\uFF1A80/",
           "expect_url": "http://www.lookout.net:80/"
         },
         {
-          "id": "115",
+          "id": "9",
           "name": "",
           "url": "http://www\u2025lookout.net/",
           "expect_url": "http://www..lookout.net/"
         },
         {
-          "id": "116",
+          "id": "10",
           "name": "",
           "url": "http://www.lookout\u2027net/",
           "expect_url": "http://www.xn--lookoutnet-406e/"
         },
         {
-          "id": "117",
+          "id": "11",
           "name": "",
           "url": "http://www.loo\u0138out.net/",
           "expect_url": "http://www.xn--looout-5bb.net/"
         },
         {
-          "id": "118",
+          "id": "12",
           "name": "",
           "url": "http://www.lookout.net\u2A7480/",
           "expect_url": "http://www.lookout.net::%3D80/"
         },
         {
-          "id": "119",
+          "id": "13",
           "name": "",
           "url": "http://www\u00A0.lookout.net/",
           "expect_url": "http://www%20.lookout.net/"
         },
         {
-          "id": "120",
+          "id": "14",
           "name": "",
           "url": "http://\u1680lookout.net/",
           "expect_url": "http://%E1%9A%80lookout.net/"
         },
         {
-          "id": "121",
+          "id": "15",
           "name": "",
           "url": "http://\u001Flookout.net/",
           "expect_url": "http://%1Flookout.net/"
         },
         {
-          "id": "122",
+          "id": "16",
           "name": "",
           "url": "http://look\u06DDout.net/",
           "expect_url": "http://look%DB%9Dout.net/"
         },
         {
-          "id": "123",
+          "id": "17",
           "name": "",
           "url": "http://look\u180Eout.net/",
           "expect_url": "http://look%E1%A0%8Eout.net/"
         },
         {
-          "id": "124",
+          "id": "18",
           "name": "",
           "url": "http://look\u2060out.net/",
           "expect_url": "http://look%E2%81%A0out.net/"
         },
         {
-          "id": "125",
+          "id": "19",
           "name": "",
           "url": "http://look\uFEFFout.net/",
           "expect_url": "http://look%EF%BB%BFout.net/"
         },
         {
-          "id": "126",
+          "id": "20",
           "name": "",
           "url": "http://look\uD83F\uDFFEout.net/",
           "expect_url": "http://look%F0%9F%BF%BEout.net/"
         },
         {
-          "id": "127",
+          "id": "21",
           "name": "",
           "url": "http://look\uDEADout.net/",
           "expect_url": "http://look%ED%BA%ADout.net/"
         },
         {
-          "id": "128",
+          "id": "22",
           "name": "",
           "url": "http://look\uFFFAout.net/",
           "expect_url": "http://look%EF%BF%BAout.net/"
         },
         {
-          "id": "129",
+          "id": "23",
           "name": "",
           "url": "http://look\u2FF0out.net/",
           "expect_url": "http://look%E2%BF%B0out.net/"
         },
         {
-          "id": "130",
+          "id": "24",
           "name": "",
           "url": "http://look\u0341out.net/",
           "expect_url": "http://look%CD%81out.net/"
         },
         {
-          "id": "131",
+          "id": "25",
           "name": "",
           "url": "http://look\u202Eout.net/",
           "expect_url": "http://look%E2%80%AEout.net/"
         },
         {
-          "id": "132",
+          "id": "26",
           "name": "",
           "url": "http://look\u206Bout.net/",
           "expect_url": "http://look%E2%81%ABout.net/"
         },
         {
-          "id": "133",
+          "id": "27",
           "name": "",
           "url": "http://look\uDB40\uDC01out.net/",
           "expect_url": "http://look%F3%A0%80%81out.net/"
         },
         {
-          "id": "134",
+          "id": "28",
           "name": "",
           "url": "http://look\uDB40\uDC20out.net/",
           "expect_url": "http://look%F3%A0%80%A0out.net/"
         },
         {
-          "id": "135",
+          "id": "29",
           "name": "",
           "url": "http://look\u05BEout.net/",
           "expect_url": "http://look%D6%BEout.net/"
@@ -913,121 +913,121 @@
         "desc": "Test cases from Webkit's fast/url/idna2008.js",
         "test": [
         {
-          "id": "136",
+          "id": "1",
           "name": "",
           "url": "http://B\u00FCcher.de/",
           "expect_url": "http://xn--bcher-kva.de/"
         },
         {
-          "id": "137",
+          "id": "2",
           "name": "",
           "url": "http://fa\u00DF.de/",
           "expect_url": "http://xn--fa-hia.de/"
         },
         {
-          "id": "138",
+          "id": "3",
           "name": "",
           "url": "http://\u03B2\u03CC\u03BB\u03BF\u03C2.com/",
           "expect_url": "http://xn--nxasmm1c.com/"
         },
         {
-          "id": "139",
+          "id": "4",
           "name": "",
           "url": "http://\u0DC1\u0DCA\u200D\u0DBB\u0DD3.com/",
           "expect_url": "http://xn--10cl1a0b660p.com/"
         },
         {
-          "id": "140",
+          "id": "5",
           "name": "",
           "url": "http://\u0646\u0627\u0645\u0647\u200C\u0627\u06CC.com/",
           "expect_url": "http://xn--mgba3gch31f060k.com/"
         },
         {
-          "id": "141",
+          "id": "6",
           "name": "",
           "url": "http://\u2665.net/",
           "expect_url": "http://\uFFFD.net/"
         },
         {
-          "id": "142",
+          "id": "7",
           "name": "",
           "url": "http://\u0378.net/",
           "expect_url": "http://\uFFFD.net/"
         },
         {
-          "id": "143",
+          "id": "8",
           "name": "",
           "url": "http://\u04C0.com/",
           "expect_url": "http://\uFFFD.com/"
         },
         {
-          "id": "144",
+          "id": "9",
           "name": "",
           "url": "http://\uD87E\uDC68.com/",
           "expect_url": "http://\uFFFD.com/"
         },
         {
-          "id": "145",
+          "id": "10",
           "name": "",
           "url": "http://\u2183.com/",
           "expect_url": "http://\uFFFD.com/"
         },
         {
-          "id": "146",
+          "id": "11",
           "name": "",
           "url": "http://look\u034Fout.net/",
           "expect_url": "http://lookout.net/"
         },
         {
-          "id": "147",
+          "id": "12",
           "name": "",
           "url": "http://gOoGle.com/",
           "expect_url": "http://google.com/"
         },
         {
-          "id": "148",
+          "id": "13",
           "name": "",
           "url": "http://\u09dc.com/",
           "expect_url": "http://\u09A1\u09BC.com/"
         },
         {
-          "id": "149",
+          "id": "14",
           "name": "",
           "url": "http://\u1E9E.com/",
           "expect_url": "http://ss.com/"
         },
         {
-          "id": "150",
+          "id": "15",
           "name": "",
           "url": "http://\u1E9E.foo.com/",
           "expect_url": "http://ss.foo.com/"
         },
         {
-          "id": "151",
+          "id": "16",
           "name": "",
           "url": "http://-foo.bar.com",
           "expect_url": "http://"
         },
         {
-          "id": "152",
+          "id": "17",
           "name": "",
           "url": "http://foo-.bar.com",
           "expect_url": "http://"
         },
         {
-          "id": "153",
+          "id": "18",
           "name": "",
           "url": "http://ab--cd.com",
           "expect_url": "http://"
         },
         {
-          "id": "154",
+          "id": "19",
           "name": "",
           "url": "http://xn--0.com",
           "expect_url": "http://"
         },
         {
-          "id": "155",
+          "id": "20",
           "name": "",
           "url": "http://foo\u0300.bar.com/",
           "expect_url": "http://foo%CC%80.bar.com/"
@@ -1040,320 +1040,320 @@
         "desc": "Test cases from Webkit's fast/url/ipv4.js",
         "test": [
         {
-          "id": "156",
+          "id": "1",
           "name": "",
           "url": "http://./",
           "expect_url": "http://"
         },
         {
-          "id": "157",
+          "id": "2",
           "name": "",
           "url": "http://192.168.0.1/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "158",
+          "id": "3",
           "name": "",
           "url": "http://0300.0250.00.01/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "159",
+          "id": "4",
           "name": "",
           "url": "http://0xC0.0Xa8.0x0.0x1/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "160",
+          "id": "5",
           "name": "",
           "url": "http://192.168.9.com/",
           "expect_url": "http://"
         },
         {
-          "id": "161",
+          "id": "6",
           "name": "",
           "url": "http://19a.168.0.1/",
           "expect_url": "http://"
         },
         {
-          "id": "162",
+          "id": "7",
           "name": "",
           "url": "http://0308.0250.00.01/",
           "expect_url": "http://"
         },
         {
-          "id": "163",
+          "id": "8",
           "name": "",
           "url": "http://0xCG.0xA8.0x0.0x1/",
           "expect_url": "http://"
         },
         {
-          "id": "164",
+          "id": "9",
           "name": "",
           "url": "http://192/",
           "expect_url": "http://0.0.0.192/"
         },
         {
-          "id": "165",
+          "id": "10",
           "name": "",
           "url": "http://0xC0a80001/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "166",
+          "id": "11",
           "name": "",
           "url": "http://030052000001/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "167",
+          "id": "12",
           "name": "",
           "url": "http://000030052000001/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "168",
+          "id": "13",
           "name": "",
           "url": "http://192.168/",
           "expect_url": "http://192.0.0.168/"
         },
         {
-          "id": "169",
+          "id": "14",
           "name": "",
           "url": "http://192.0x00A80001/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "170",
+          "id": "15",
           "name": "",
           "url": "http://0xc0.052000001/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "171",
+          "id": "16",
           "name": "",
           "url": "http://192.168.1/",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "172",
+          "id": "17",
           "name": "",
           "url": "http://192.168.0.0.1/",
           "expect_url": "http://"
         },
         {
-          "id": "173",
+          "id": "18",
           "name": "",
           "url": "http://192.168.0.1./",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "174",
+          "id": "19",
           "name": "",
           "url": "http://192.168.0.1. hello/",
           "expect_url": "http://"
         },
         {
-          "id": "175",
+          "id": "20",
           "name": "",
           "url": "http://192.168.0.1../",
           "expect_url": "http://"
         },
         {
-          "id": "176",
+          "id": "21",
           "name": "",
           "url": "http://192.168..1/",
           "expect_url": "http://"
         },
         {
-          "id": "177",
+          "id": "22",
           "name": "",
           "url": "http://0x100.0/",
           "expect_url": "http://"
         },
         {
-          "id": "178",
+          "id": "23",
           "name": "",
           "url": "http://0x100.0.0/",
           "expect_url": "http://"
         },
         {
-          "id": "179",
+          "id": "24",
           "name": "",
           "url": "http://0x100.0.0.0/",
           "expect_url": "http://"
         },
         {
-          "id": "180",
+          "id": "25",
           "name": "",
           "url": "http://0.0x100.0.0/",
           "expect_url": "http://"
         },
         {
-          "id": "181",
+          "id": "26",
           "name": "",
           "url": "http://0.0.0x100.0/",
           "expect_url": "http://"
         },
         {
-          "id": "182",
+          "id": "27",
           "name": "",
           "url": "http://0.0.0.0x100/",
           "expect_url": "http://"
         },
         {
-          "id": "183",
+          "id": "28",
           "name": "",
           "url": "http://0.0.0x10000/",
           "expect_url": "http://"
         },
         {
-          "id": "184",
+          "id": "29",
           "name": "",
           "url": "http://0.0x1000000/",
           "expect_url": "http://"
         },
         {
-          "id": "185",
+          "id": "30",
           "name": "",
           "url": "http://0x100000000/",
           "expect_url": "http://"
         },
         {
-          "id": "186",
+          "id": "31",
           "name": "",
           "url": "http://0xFF.0/",
           "expect_url": "http://255.0.0.0/",
           "expect_rel": ""
         },
         {
-          "id": "187",
+          "id": "32",
           "name": "",
           "url": "http://0xFF.0.0/",
           "expect_url": "http://255.0.0.0/"
         },
         {
-          "id": "188",
+          "id": "33",
           "name": "",
           "url": "http://0xFF.0.0.0/",
           "expect_url": "http://255.0.0.0/"
         },
         {
-          "id": "189",
+          "id": "34",
           "name": "",
           "url": "http://0.0xFF.0.0/",
           "expect_url": "http://0.255.0.0/"
         },
         {
-          "id": "190",
+          "id": "35",
           "name": "",
           "url": "http://0.0.0xFF.0/",
           "expect_url": "http://0.0.255.0/"
         },
         {
-          "id": "191",
+          "id": "36",
           "name": "",
           "url": "http://0.0.0.0xFF/",
           "expect_url": "http://0.0.0.255/"
         },
         {
-          "id": "192",
+          "id": "37",
           "name": "",
           "url": "http://0.0.0xFFFF/",
           "expect_url": "http://0.0.255.255/"
         },
         {
-          "id": "193",
+          "id": "38",
           "name": "",
           "url": "http://0.0xFFFFFF/",
           "expect_url": "http://0.255.255.255/"
         },
         {
-          "id": "194",
+          "id": "39",
           "name": "",
           "url": "http://0xFFFFFFFF/",
           "expect_url": "http://255.255.255.255/"
         },
         {
-          "id": "195",
+          "id": "40",
           "name": "",
           "url": "http://276.256.0xf1a2.077777/",
           "expect_url": "http://"
         },
         {
-          "id": "196",
+          "id": "41",
           "name": "",
           "url": "http://192.168.0.257/",
           "expect_url": "http://"
         },
         {
-          "id": "197",
+          "id": "42",
           "name": "",
           "url": "http://192.168.0xa20001/",
           "expect_url": "http://"
         },
         {
-          "id": "198",
+          "id": "43",
           "name": "",
           "url": "http://192.015052000001/",
           "expect_url": "http://"
         },
         {
-          "id": "199",
+          "id": "44",
           "name": "",
           "url": "http://0X12C0a80001/",
           "expect_url": "http://"
         },
         {
-          "id": "200",
+          "id": "45",
           "name": "",
           "url": "http://276.1.2/",
           "expect_url": "http://"
         },
         {
-          "id": "201",
+          "id": "46",
           "name": "",
           "url": "http://192.168.0.1 hello/",
           "expect_url": "http://"
         },
         {
-          "id": "202",
+          "id": "47",
           "name": "",
           "url": "http://0000000000000300.0x00000000000000fF.00000000000000001/",
           "expect_url": "http://192.255.0.1/"
         },
         {
-          "id": "203",
+          "id": "48",
           "name": "",
           "url": "http://0000000000000300.0xffffffffFFFFFFFF.3022415481470977/",
           "expect_url": "http://"
         },
         {
-          "id": "204",
+          "id": "49",
           "name": "",
           "url": "http://00000000000000000001/",
           "expect_url": "http://0.0.0.1/"
         },
         {
-          "id": "205",
+          "id": "50",
           "name": "",
           "url": "http://0000000000000000100000000000000001/",
           "expect_url": "http://"
         },
         {
-          "id": "206",
+          "id": "51",
           "name": "",
           "url": "http://0.0.0.000000000000000000z/",
           "expect_url": "http://"
         },
         {
-          "id": "207",
+          "id": "52",
           "name": "",
           "url": "http://0.0.0.100000000000000000z/",
           "expect_url": "http://"
         },
         {
-          "id": "208",
+          "id": "53",
           "name": "",
           "url": "http://0.00.0x.0x0/",
           "expect_url": "http://0.0.0.0/"
@@ -1366,289 +1366,289 @@
         "desc": "Test cases from Webkit's fast/url/ipv6.js",
         "test": [
         {
-          "id": "209",
+          "id": "1",
           "name": "",
           "url": "http://[/",
           "expect_url": "http://"
         },
         {
-          "id": "210",
+          "id": "2",
           "name": "",
           "url": "http://[:/",
           "expect_url": "http://"
         },
         {
-          "id": "211",
+          "id": "3",
           "name": "",
           "url": "http://]/",
           "expect_url": "http://"
         },
         {
-          "id": "212",
+          "id": "4",
           "name": "",
           "url": "http://:]/",
           "expect_url": "http://"
         },
         {
-          "id": "213",
+          "id": "5",
           "name": "",
           "url": "http://[]/",
           "expect_url": "http://"
         },
         {
-          "id": "214",
+          "id": "6",
           "name": "",
           "url": "http://[:]/",
           "expect_url": "http://"
         },
         {
-          "id": "215",
+          "id": "7",
           "name": "",
           "url": "http://2001:db8::1/",
           "expect_url": "http://"
         },
         {
-          "id": "216",
+          "id": "8",
           "name": "",
           "url": "http://[2001:db8::1/",
           "expect_url": "http://"
         },
         {
-          "id": "217",
+          "id": "9",
           "name": "",
           "url": "http://2001:db8::1]/",
           "expect_url": "http://"
         },
         {
-          "id": "218",
+          "id": "10",
           "name": "",
           "url": "http://[::]/",
           "expect_url": "http://[::]/"
         },
         {
-          "id": "219",
+          "id": "11",
           "name": "",
           "url": "http://[::1]/",
           "expect_url": "http://[::1]/"
         },
         {
-          "id": "220",
+          "id": "12",
           "name": "",
           "url": "http://[1::.]/",
           "expect_url": "http://[1::.]/"
         },
         {
-          "id": "221",
+          "id": "13",
           "name": "",
           "url": "http://[::192.168.0.1.]/",
           "expect_url": "http://[::c0a8:1.]/"
         },
         {
-          "id": "222",
+          "id": "14",
           "name": "",
           "url": "http://[::ffff:192.168.0.1.]/",
           "expect_url": "http://[::ffff:c0a8:1.]/"
         },
         {
-          "id": "223",
+          "id": "15",
           "name": "",
           "url": "http://[000:01:02:003:004:5:6:007.]/",
           "expect_url": "http://[0:1:2:3:4:5:6:7.]/"
         },
         {
-          "id": "224",
+          "id": "16",
           "name": "",
           "url": "http://[A:b:c:DE:fF:0:1:aC.]/",
           "expect_url": "http://[a:b:c:de:ff:0:1:ac.]/"
         },
         {
-          "id": "225",
+          "id": "17",
           "name": "",
           "url": "http://[1:0:0:2::3:0.]/",
           "expect_url": "http://[1::2:0:0:3:0.]/"
         },
         {
-          "id": "226",
+          "id": "18",
           "name": "",
           "url": "http://[1::2:0:0:3:0.]/",
           "expect_url": "http://[1::2:0:0:3:0.]/"
         },
         {
-          "id": "227",
+          "id": "19",
           "name": "",
           "url": "http://[::eeee:192.168.0.1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "228",
+          "id": "20",
           "name": "",
           "url": "http://[2001::192.168.0.1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "229",
+          "id": "21",
           "name": "",
           "url": "http://[1:2:192.168.0.1:5:6.]/",
           "expect_url": "http://"
         },
         {
-          "id": "230",
+          "id": "22",
           "name": "",
           "url": "http://[::ffff:192.1.2.]/",
           "expect_url": "http://[::ffff:c001:2.]/"
         },
         {
-          "id": "231",
+          "id": "23",
           "name": "",
           "url": "http://[::ffff:0xC0.0Xa8.0x0.0x1.]/",
           "expect_url": "http://[::ffff:c0a8:1.]/"
         },
         {
-          "id": "232",
+          "id": "24",
           "name": "",
           "url": "http://[0:0::0:0:8.]/",
           "expect_url": "http://[::8.]/"
         },
         {
-          "id": "233",
+          "id": "25",
           "name": "",
           "url": "http://[2001:db8::1.]/",
           "expect_url": "http://[2001:db8::1.]/"
         },
         {
-          "id": "234",
+          "id": "26",
           "name": "",
           "url": "http://[2001::db8::1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "235",
+          "id": "27",
           "name": "",
           "url": "http://[2001:db8:::1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "236",
+          "id": "28",
           "name": "",
           "url": "http://[:::.]/",
           "expect_url": "http://"
         },
         {
-          "id": "237",
+          "id": "29",
           "name": "",
           "url": "http://[2001::.com.]/",
           "expect_url": "http://"
         },
         {
-          "id": "238",
+          "id": "30",
           "name": "",
           "url": "http://[::192.168.0.0.1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "239",
+          "id": "31",
           "name": "",
           "url": "http://[::ffff:192.168.0.0.1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "240",
+          "id": "32",
           "name": "",
           "url": "http://[1:2:3:4:5:6:7:8:9.]/",
           "expect_url": "http://"
         },
         {
-          "id": "241",
+          "id": "33",
           "name": "",
           "url": "http://[0:0:0:0:0:0:0:192.168.0.1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "242",
+          "id": "34",
           "name": "",
           "url": "http://[1:2:3:4:5:6::192.168.0.1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "243",
+          "id": "35",
           "name": "",
           "url": "http://[1:2:3:4:5:6::8.]/",
           "expect_url": "http://[1:2:3:4:5:6:0:8.]/"
         },
         {
-          "id": "244",
+          "id": "36",
           "name": "",
           "url": "http://[1:2:3:4:5:6:7:8:.]/",
           "expect_url": "http://"
         },
         {
-          "id": "245",
+          "id": "37",
           "name": "",
           "url": "http://[1:2:3:4:5:6:192.168.0.1:.]/",
           "expect_url": "http://"
         },
         {
-          "id": "246",
+          "id": "38",
           "name": "",
           "url": "http://[-1:2:3:4:5:6:7:8.]/",
           "expect_url": "http://"
         },
         {
-          "id": "247",
+          "id": "39",
           "name": "",
           "url": "http://[1::%1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "248",
+          "id": "40",
           "name": "",
           "url": "http://[1::%eth0.]/",
           "expect_url": "http://"
         },
         {
-          "id": "249",
+          "id": "41",
           "name": "",
           "url": "http://[1::%.]/",
           "expect_url": "http://"
         },
         {
-          "id": "250",
+          "id": "42",
           "name": "",
           "url": "http://[%.]/",
           "expect_url": "http://"
         },
         {
-          "id": "251",
+          "id": "43",
           "name": "",
           "url": "http://[::%:.]/",
           "expect_url": "http://"
         },
         {
-          "id": "252",
+          "id": "44",
           "name": "",
           "url": "http://[:0:0::0:0:8.]/",
           "expect_url": "http://"
         },
         {
-          "id": "253",
+          "id": "45",
           "name": "",
           "url": "http://[0:0::0:0:8:.]/",
           "expect_url": "http://"
         },
         {
-          "id": "254",
+          "id": "46",
           "name": "",
           "url": "http://[:0:0::0:0:8:.]/",
           "expect_url": "http://"
         },
         {
-          "id": "255",
+          "id": "47",
           "name": "",
           "url": "http://[::192.168..1.]/",
           "expect_url": "http://"
         },
         {
-          "id": "256",
+          "id": "48",
           "name": "",
           "url": "http://[::1 hello.]/",
           "expect_url": "http://"
@@ -1661,55 +1661,55 @@
         "desc": "Test cases from Webkit's fast/url/mailto.js",
         "test": [
         {
-          "id": "257",
+          "id": "1",
           "name": "",
           "url": "mailto:addr1",
           "expect_url": "mailto:addr1"
         },
         {
-          "id": "258",
+          "id": "2",
           "name": "",
           "url": "mailto:addr1@foo.com",
           "expect_url": "mailto:addr1@foo.com"
         },
         {
-          "id": "259",
+          "id": "3",
           "name": "",
           "url": "mailto:addr1 \\t ",
           "expect_url": "mailto:addr1"
         },
         {
-          "id": "260",
+          "id": "4",
           "name": "",
           "url": "mailto:addr1?to=jon",
           "expect_url": "mailto:addr1?to=jon"
         },
         {
-          "id": "261",
+          "id": "5",
           "name": "",
           "url": "mailto:addr1,addr2",
           "expect_url": "mailto:addr1,addr2"
         },
         {
-          "id": "262",
+          "id": "6",
           "name": "",
           "url": "mailto:addr1, addr2",
           "expect_url": "mailto:addr1, addr2"
         },
         {
-          "id": "263",
+          "id": "7",
           "name": "",
           "url": "mailto:addr1%2caddr2",
           "expect_url": "mailto:addr1%2caddr2"
         },
         {
-          "id": "264",
+          "id": "8",
           "name": "",
           "url": "mailto:\uD800\uDF00",
           "expect_url": "mailto:%F0%90%8C%80"
         },
         {
-          "id": "265",
+          "id": "9",
           "name": "",
           "url": "mailto:addr1?",
           "expect_url": "mailto:addr1?"
@@ -1722,13 +1722,13 @@
         "desc": "Test cases from Webkit's fast/url/path-url.js",
         "test": [
         {
-          "id": "266",
+          "id": "1",
           "name": "",
           "url": "javascript:",
           "expect_url": "javascript:"
         },
         {
-          "id": "267",
+          "id": "2",
           "name": "",
           "url": "JavaScript:Foo",
           "expect_url": "javascript:Foo"
@@ -1741,241 +1741,241 @@
         "desc": "Test cases from Webkit's fast/url/path.js",
         "test": [
         {
-          "id": "268",
+          "id": "1",
           "name": "",
           "url": "http://www.example.com/././foo",
           "expect_url": "http://www.example.com/foo"
         },
         {
-          "id": "269",
+          "id": "2",
           "name": "",
           "url": "http://www.example.com/./.foo",
           "expect_url": "http://www.example.com/.foo"
         },
         {
-          "id": "270",
+          "id": "3",
           "name": "",
           "url": "http://www.example.com/foo/.",
           "expect_url": "http://www.example.com/foo/"
         },
         {
-          "id": "271",
+          "id": "4",
           "name": "",
           "url": "http://www.example.com/foo/./",
           "expect_url": "http://www.example.com/foo/"
         },
         {
-          "id": "272",
+          "id": "5",
           "name": "",
           "url": "http://www.example.com/foo/bar/..",
           "expect_url": "http://www.example.com/foo/"
         },
         {
-          "id": "273",
+          "id": "6",
           "name": "",
           "url": "http://www.example.com/foo/bar/../",
           "expect_url": "http://www.example.com/foo/"
         },
         {
-          "id": "274",
+          "id": "7",
           "name": "",
           "url": "http://www.example.com/foo/..bar",
           "expect_url": "http://www.example.com/foo/..bar"
         },
         {
-          "id": "275",
+          "id": "8",
           "name": "",
           "url": "http://www.example.com/foo/bar/../ton",
           "expect_url": "http://www.example.com/foo/ton"
         },
         {
-          "id": "276",
+          "id": "9",
           "name": "",
           "url": "http://www.example.com/foo/bar/../ton/../../a",
           "expect_url": "http://www.example.com/a"
         },
         {
-          "id": "277",
+          "id": "10",
           "name": "",
           "url": "http://www.example.com/foo/../../..",
           "expect_url": "http://www.example.com/"
         },
         {
-          "id": "278",
+          "id": "11",
           "name": "",
           "url": "http://www.example.com/foo/../../../ton",
           "expect_url": "http://www.example.com/ton"
         },
         {
-          "id": "279",
+          "id": "12",
           "name": "",
           "url": "http://www.example.com/foo/%2e",
           "expect_url": "http://www.example.com/foo/"
         },
         {
-          "id": "280",
+          "id": "13",
           "name": "",
           "url": "http://www.example.com/foo/%2e%2",
           "expect_url": "http://www.example.com/foo/.%2"
         },
         {
-          "id": "281",
+          "id": "14",
           "name": "",
           "url": "http://www.example.com/foo/%2e./%2e%2e/.%2e/%2e.bar",
           "expect_url": "http://www.example.com/..bar"
         },
         {
-          "id": "282",
+          "id": "15",
           "name": "",
           "url": "http://www.example.com////../..",
           "expect_url": "http://www.example.com//"
         },
         {
-          "id": "283",
+          "id": "16",
           "name": "",
           "url": "http://www.example.com/foo/bar//../..",
           "expect_url": "http://www.example.com/foo/"
         },
         {
-          "id": "284",
+          "id": "17",
           "name": "",
           "url": "http://www.example.com/foo/bar//..",
           "expect_url": "http://www.example.com/foo/bar/"
         },
         {
-          "id": "285",
+          "id": "18",
           "name": "",
           "url": "http://www.example.com/foo/bar/..",
           "expect_url": "http://www.example.com/foo/"
         },
         {
-          "id": "286",
+          "id": "19",
           "name": "",
           "url": "http://www.example.com/foo",
           "expect_url": "http://www.example.com/foo"
         },
         {
-          "id": "287",
+          "id": "20",
           "name": "",
           "url": "http://www.example.com/%20foo",
           "expect_url": "http://www.example.com/%20foo"
         },
         {
-          "id": "288",
+          "id": "21",
           "name": "",
           "url": "http://www.example.com/foo%",
           "expect_url": "http://www.example.com/foo%"
         },
         {
-          "id": "289",
+          "id": "22",
           "name": "",
           "url": "http://www.example.com/foo%2",
           "expect_url": "http://www.example.com/foo%2"
         },
         {
-          "id": "290",
+          "id": "23",
           "name": "",
           "url": "http://www.example.com/foo%2zbar",
           "expect_url": "http://www.example.com/foo%2zbar"
         },
         {
-          "id": "291",
+          "id": "24",
           "name": "",
           "url": "http://www.example.com/foo%2\u00c2\u00a9zbar",
           "expect_url": "http://www.example.com/foo%2%C3%82%C2%A9zbar"
         },
         {
-          "id": "292",
+          "id": "25",
           "name": "",
           "url": "http://www.example.com/foo%41%7a",
           "expect_url": "http://www.example.com/fooAz"
         },
         {
-          "id": "293",
+          "id": "26",
           "name": "",
           "url": "http://www.example.com/foo\u0009\u0091%91",
           "expect_url": "http://www.example.com/foo%09%C2%91%91"
         },
         {
-          "id": "294",
+          "id": "27",
           "name": "",
           "url": "http://www.example.com/foo%00%51",
           "expect_url": "http://www.example.com/foo%00Q"
         },
         {
-          "id": "295",
+          "id": "28",
           "name": "",
           "url": "http://www.example.com/(%28:%3A%29)",
           "expect_url": "http://www.example.com/(%28:%3A%29)"
         },
         {
-          "id": "296",
+          "id": "29",
           "name": "",
           "url": "http://www.example.com/%3A%3a%3C%3c",
           "expect_url": "http://www.example.com/%3A%3a%3C%3c"
         },
         {
-          "id": "297",
+          "id": "30",
           "name": "",
           "url": "http://www.example.com/foo\\tbar",
           "expect_url": "http://www.example.com/foo%09bar"
         },
         {
-          "id": "298",
+          "id": "31",
           "name": "",
           "url": "http://www.example.com\\\\foo\\\\bar",
           "expect_url": "http://www.example.com/foo/bar"
         },
         {
-          "id": "299",
+          "id": "32",
           "name": "",
           "url": "http://www.example.com/%7Ffp3%3Eju%3Dduvgw%3Dd",
           "expect_url": "http://www.example.com/%7Ffp3%3Eju%3Dduvgw%3Dd"
         },
         {
-          "id": "300",
+          "id": "33",
           "name": "",
           "url": "http://www.example.com/@asdf%40",
           "expect_url": "http://www.example.com/@asdf%40"
         },
         {
-          "id": "301",
+          "id": "34",
           "name": "",
           "url": "http://www.example.com/\u4f60\u597d\u4f60\u597d",
           "expect_url": "http://www.example.com/%E4%BD%A0%E5%A5%BD%E4%BD%A0%E5%A5%BD"
         },
         {
-          "id": "302",
+          "id": "35",
           "name": "",
           "url": "http://www.example.com/\ufdd0zyx",
           "expect_url": "http://www.example.com/%EF%BF%BDzyx"
         },
         {
-          "id": "303",
+          "id": "36",
           "name": "",
           "url": "http://www.example.com/\u2025/foo",
           "expect_url": "http://www.example.com/%E2%80%A5/foo"
         },
         {
-          "id": "304",
+          "id": "37",
           "name": "",
           "url": "http://www.example.com/\uDEAD/foo",
           "expect_url": "http://www.example.com/\uFFFD/foo"
         },
         {
-          "id": "305",
+          "id": "38",
           "name": "",
           "url": "http://www.example.com/\uFEFF/foo",
           "expect_url": "http://www.example.com/%EF%BB%BF/foo"
         },
         {
-          "id": "306",
+          "id": "39",
           "name": "",
           "url": "http://www.example.com/\u202E/foo/\u202D/bar",
           "expect_url": "http://www.example.com/%E2%80%AE/foo/%E2%80%AD/bar"
         },
         {
-          "id": "307",
+          "id": "40",
           "name": "",
           "url": "http://www.example.com\uFF0Ffoo/",
           "expect_url": "http://www.example.com/foo/"
@@ -1988,43 +1988,43 @@
         "desc": "Test cases from Webkit's fast/url/port.js",
         "test": [
         {
-          "id": "308",
+          "id": "1",
           "name": "",
           "url": "http://www.example.com:as df/",
           "expect_url": "http://www.example.com:as%20df/"
         },
         {
-          "id": "309",
+          "id": "2",
           "name": "",
           "url": "http://www.example.com:-2/",
           "expect_url": "http://www.example.com:-2/"
         },
         {
-          "id": "310",
+          "id": "3",
           "name": "",
           "url": "http://www.example.com:80/",
           "expect_url": "http://www.example.com/"
         },
         {
-          "id": "311",
+          "id": "4",
           "name": "",
           "url": "http://www.example.com:8080/",
           "expect_url": "http://www.example.com:8080/"
         },
         {
-          "id": "312",
+          "id": "5",
           "name": "",
           "url": "http://www.example.com:/",
           "expect_url": "http://www.example.com/"
         },
         {
-          "id": "313",
+          "id": "6",
           "name": "",
           "url": "http://www.example.com:\u1369/",
           "expect_url": "http://www.example.com:%E1%8D%A9/"
         },
         {
-          "id": "314",
+          "id": "7",
           "name": "",
           "url": "http://www.example.com:\uD835\uDFD6/",
           "expect_url": "http://www.example.com:%F0%9D%9F%96/"
@@ -2037,49 +2037,49 @@
         "desc": "Test cases from Webkit's fast/url/query.js",
         "test": [
         {
-          "id": "315",
+          "id": "1",
           "name": "",
           "url": "http://www.example.com/?foo=bar",
           "expect_url": "http://www.example.com/?foo=bar"
         },
         {
-          "id": "316",
+          "id": "2",
           "name": "",
           "url": "http://www.example.com/?as?df",
           "expect_url": "http://www.example.com/?as?df"
         },
         {
-          "id": "317",
+          "id": "3",
           "name": "",
           "url": "http://www.example.com/?\\%02hello%7f bye",
           "expect_url": "http://www.example.com/?%02hello%7F%20bye"
         },
         {
-          "id": "318",
+          "id": "4",
           "name": "",
           "url": "http://www.example.com/?%40%41123",
           "expect_url": "http://www.example.com/?%40%41123"
         },
         {
-          "id": "319",
+          "id": "5",
           "name": "",
           "url": "http://www.example.com/?q=\u4F60\u597D",
           "expect_url": "http://www.example.com/?q=%26%2320320%3B%26%2322909%3B"
         },
         {
-          "id": "320",
+          "id": "6",
           "name": "",
           "url": "http://www.example.com/?q=\\\ud800\\\ud800",
           "expect_url": "http://www.example.com/?q=%26%2355296%3B%26%2355296%3B"
         },
         {
-          "id": "321",
+          "id": "7",
           "name": "",
           "url": "http://www.example.com/?q=&lt;asdf&gt;",
           "expect_url": "http://www.example.com/?q=%3Casdf%3E"
         },
         {
-          "id": "322",
+          "id": "8",
           "name": "",
           "url": "http://www.example.com/?q=\\\"asdf\\\"",
           "expect_url": "http://www.example.com/?q=%22asdf%22"
@@ -2092,21 +2092,21 @@
         "desc": "Test cases from Webkit's fast/url/relative-unix.js",
         "test": [
         {
-          "id": "323",
+          "id": "1",
           "name": "",
           "base": "http://host/a",
           "rel": "\\\\\\\\Another\\\\path",
           "expect_rel": "http://another/path"
         },
         {
-          "id": "324",
+          "id": "2",
           "name": "",
           "base": "http://host/a",
           "rel": "/c:\\\\foo",
           "expect_rel": "http://host/c:/foo"
         },
         {
-          "id": "325",
+          "id": "3",
           "name": "",
           "base": "http://host/a",
           "rel": "//c:\\\\foo",
@@ -2120,112 +2120,112 @@
         "desc": "Test cases from Webkit's fast/url/relative-win.js",
         "test": [
         {
-          "id": "326",
+          "id": "1",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "http://host/",
           "expect_rel": "http://host/"
         },
         {
-          "id": "327",
+          "id": "2",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "bar",
           "expect_rel": "file:///C:/bar"
         },
         {
-          "id": "328",
+          "id": "3",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "../../../bar.html",
           "expect_rel": "file:///C:/bar.html"
         },
         {
-          "id": "329",
+          "id": "4",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "/../bar.html",
           "expect_rel": "file:///C:/bar.html"
         },
         {
-          "id": "330",
+          "id": "5",
           "name": "",
           "base": "http://host/a",
           "rel": "\\\\\\\\another\\\\path",
           "expect_rel": ""
         },
         {
-          "id": "331",
+          "id": "6",
           "name": "",
           "base": "file:///C:/something",
           "rel": "//c:/foo",
           "expect_rel": "file:///C:/foo"
         },
         {
-          "id": "332",
+          "id": "7",
           "name": "",
           "base": "file:///C:/something",
           "rel": "//localhost/c:/foo",
           "expect_rel": "file:///C:/foo"
         },
         {
-          "id": "333",
+          "id": "8",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "c:",
           "expect_rel": ""
         },
         {
-          "id": "334",
+          "id": "9",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "c:/foo",
           "expect_rel": ""
         },
         {
-          "id": "335",
+          "id": "10",
           "name": "",
           "base": "http://host/a",
           "rel": "c:\\\\foo",
           "expect_rel": ""
         },
         {
-          "id": "336",
+          "id": "11",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "/z:/bar",
           "expect_rel": "file:///Z:/bar"
         },
         {
-          "id": "337",
+          "id": "12",
           "name": "",
           "base": "file:///C:/foo",
           "rel": "/bar",
           "expect_rel": "file:///C:/bar"
         },
         {
-          "id": "338",
+          "id": "13",
           "name": "",
           "base": "file://localhost/C:/foo",
           "rel": "/bar",
           "expect_rel": "file://localhost/C:/bar"
         },
         {
-          "id": "339",
+          "id": "14",
           "name": "",
           "base": "file:///C:/foo/com/",
           "rel": "/bar",
           "expect_rel": "file:///C:/bar"
         },
         {
-          "id": "340",
+          "id": "15",
           "name": "",
           "base": "file:///C:/something",
           "rel": "//somehost/path",
           "expect_rel": "file://somehost/path"
         },
         {
-          "id": "341",
+          "id": "16",
           "name": "",
           "base": "file:///C:/something",
           "rel": "/\\\\//somehost/path",
@@ -2239,378 +2239,378 @@
         "desc": "Test cases from Webkit's fast/url/relative.js",
         "test": [
         {
-          "id": "342",
+          "id": "1",
           "name": "",
           "base": "http://host/a",
           "rel": "http://another/",
           "expect_rel": "http://another/"
         },
         {
-          "id": "343",
+          "id": "2",
           "name": "",
           "base": "http://host/a",
           "rel": "http:////another/",
           "expect_rel": "http://another/"
         },
         {
-          "id": "344",
+          "id": "3",
           "name": "",
           "base": "http://foo/bar",
           "rel": "",
           "expect_rel": "http://foo/bar"
         },
         {
-          "id": "345",
+          "id": "4",
           "name": "",
           "base": "http://foo/bar#ref",
           "rel": "",
           "expect_rel": "http://foo/bar"
         },
         {
-          "id": "346",
+          "id": "5",
           "name": "",
           "base": "http://foo/bar#",
           "rel": "",
           "expect_rel": "http://foo/bar"
         },
         {
-          "id": "347",
+          "id": "6",
           "name": "",
           "base": "http://foo/bar",
           "rel": "  another  ",
           "expect_rel": "http://foo/another"
         },
         {
-          "id": "348",
+          "id": "7",
           "name": "",
           "base": "http://foo/bar",
           "rel": "  .  ",
           "expect_rel": "http://foo/"
         },
         {
-          "id": "349",
+          "id": "8",
           "name": "",
           "base": "http://foo/bar",
           "rel": " \\t ",
           "expect_rel": "http://foo/bar"
         },
         {
-          "id": "350",
+          "id": "9",
           "name": "",
           "base": "http://host/a",
           "rel": "http:path",
           "expect_rel": "http://host/path"
         },
         {
-          "id": "351",
+          "id": "10",
           "name": "",
           "base": "http://host/a/",
           "rel": "http:path",
           "expect_rel": "http://host/a/path"
         },
         {
-          "id": "352",
+          "id": "11",
           "name": "",
           "base": "http://host/a",
           "rel": "http:/path",
           "expect_rel": "http://host/path"
         },
         {
-          "id": "353",
+          "id": "12",
           "name": "",
           "base": "http://host/a",
           "rel": "HTTP:/path",
           "expect_rel": "http://host/path"
         },
         {
-          "id": "354",
+          "id": "13",
           "name": "",
           "base": "http://host/a",
           "rel": "https:host2",
           "expect_rel": "https://host2/"
         },
         {
-          "id": "355",
+          "id": "14",
           "name": "",
           "base": "http://host/a",
           "rel": "htto:/host2",
           "expect_rel": "htto:/host2"
         },
         {
-          "id": "356",
+          "id": "15",
           "name": "",
           "base": "http://host/a",
           "rel": "/b/c/d",
           "expect_rel": "http://host/b/c/d"
         },
         {
-          "id": "357",
+          "id": "16",
           "name": "",
           "base": "http://host/a",
           "rel": "\\\\b\\\\c\\\\d",
           "expect_rel": "http://host/b/c/d"
         },
         {
-          "id": "358",
+          "id": "17",
           "name": "",
           "base": "http://host/a",
           "rel": "/b/../c",
           "expect_rel": "http://host/c"
         },
         {
-          "id": "359",
+          "id": "18",
           "name": "",
           "base": "http://host/a?b#c",
           "rel": "/b/../c",
           "expect_rel": "http://host/c"
         },
         {
-          "id": "360",
+          "id": "19",
           "name": "",
           "base": "http://host/a",
           "rel": "\\\\b/../c?x#y",
           "expect_rel": "http://host/c?x#y"
         },
         {
-          "id": "361",
+          "id": "20",
           "name": "",
           "base": "http://host/a?b#c",
           "rel": "/b/../c?x#y",
           "expect_rel": "http://host/c?x#y"
         },
         {
-          "id": "362",
+          "id": "21",
           "name": "",
           "base": "http://host/a",
           "rel": "b",
           "expect_rel": "http://host/b"
         },
         {
-          "id": "363",
+          "id": "22",
           "name": "",
           "base": "http://host/a",
           "rel": "bc/de",
           "expect_rel": "http://host/bc/de"
         },
         {
-          "id": "364",
+          "id": "23",
           "name": "",
           "base": "http://host/a/",
           "rel": "bc/de?query#ref",
           "expect_rel": "http://host/a/bc/de?query#ref"
         },
         {
-          "id": "365",
+          "id": "24",
           "name": "",
           "base": "http://host/a/",
           "rel": ".",
           "expect_rel": "http://host/a/"
         },
         {
-          "id": "366",
+          "id": "25",
           "name": "",
           "base": "http://host/a/",
           "rel": "..",
           "expect_rel": "http://host/"
         },
         {
-          "id": "367",
+          "id": "26",
           "name": "",
           "base": "http://host/a/",
           "rel": "./..",
           "expect_rel": "http://host/"
         },
         {
-          "id": "368",
+          "id": "27",
           "name": "",
           "base": "http://host/a/",
           "rel": "../.",
           "expect_rel": "http://host/"
         },
         {
-          "id": "369",
+          "id": "28",
           "name": "",
           "base": "http://host/a/",
           "rel": "././.",
           "expect_rel": "http://host/a/"
         },
         {
-          "id": "370",
+          "id": "29",
           "name": "",
           "base": "http://host/a?query#ref",
           "rel": "../../../foo",
           "expect_rel": "http://host/foo"
         },
         {
-          "id": "371",
+          "id": "30",
           "name": "",
           "base": "http://host/a",
           "rel": "?foo=bar",
           "expect_rel": "http://host/a?foo=bar"
         },
         {
-          "id": "372",
+          "id": "31",
           "name": "",
           "base": "http://host/a?x=y#z",
           "rel": "?",
           "expect_rel": "http://host/a?"
         },
         {
-          "id": "373",
+          "id": "32",
           "name": "",
           "base": "http://host/a?x=y#z",
           "rel": "?foo=bar#com",
           "expect_rel": "http://host/a?foo=bar#com"
         },
         {
-          "id": "374",
+          "id": "33",
           "name": "",
           "base": "http://host/a",
           "rel": "#ref",
           "expect_rel": "http://host/a#ref"
         },
         {
-          "id": "375",
+          "id": "34",
           "name": "",
           "base": "http://host/a#b",
           "rel": "#",
           "expect_rel": "http://host/a#"
         },
         {
-          "id": "376",
+          "id": "35",
           "name": "",
           "base": "http://host/a?foo=bar#hello",
           "rel": "#bye",
           "expect_rel": "http://host/a?foo=bar#bye"
         },
         {
-          "id": "377",
+          "id": "36",
           "name": "",
           "base": "data:foobar",
           "rel": "baz.html",
           "expect_rel": ""
         },
         {
-          "id": "378",
+          "id": "37",
           "name": "",
           "base": "data:foobar",
           "rel": "data:baz",
           "expect_rel": "data:baz"
         },
         {
-          "id": "379",
+          "id": "38",
           "name": "",
           "base": "data:foobar",
           "rel": "data:/base",
           "expect_rel": "data:/base"
         },
         {
-          "id": "380",
+          "id": "39",
           "name": "",
           "base": "data:foobar",
           "rel": "http://host/",
           "expect_rel": "http://host/"
         },
         {
-          "id": "381",
+          "id": "40",
           "name": "",
           "base": "data:foobar",
           "rel": "http:host",
           "expect_rel": "http://host/"
         },
         {
-          "id": "382",
+          "id": "41",
           "name": "",
           "base": "http://foo/bar",
           "rel": "./asd:fgh",
           "expect_rel": "http://foo/asd:fgh"
         },
         {
-          "id": "383",
+          "id": "42",
           "name": "",
           "base": "http://foo/bar",
           "rel": ":foo",
           "expect_rel": "http://foo/:foo"
         },
         {
-          "id": "384",
+          "id": "43",
           "name": "",
           "base": "http://foo/bar",
           "rel": " hello world",
           "expect_rel": "http://foo/hello%20world"
         },
         {
-          "id": "385",
+          "id": "44",
           "name": "",
           "base": "data:asdf",
           "rel": ":foo",
           "expect_rel": ""
         },
         {
-          "id": "386",
+          "id": "45",
           "name": "",
           "base": "http://host/a",
           "rel": ";foo",
           "expect_rel": "http://host/;foo"
         },
         {
-          "id": "387",
+          "id": "46",
           "name": "",
           "base": "http://host/a;",
           "rel": ";foo",
           "expect_rel": "http://host/;foo"
         },
         {
-          "id": "388",
+          "id": "47",
           "name": "",
           "base": "http://host/a",
           "rel": ";/../bar",
           "expect_rel": "http://host/bar"
         },
         {
-          "id": "389",
+          "id": "48",
           "name": "",
           "base": "http://host/a",
           "rel": "//another",
           "expect_rel": "http://another/"
         },
         {
-          "id": "390",
+          "id": "49",
           "name": "",
           "base": "http://host/a",
           "rel": "//another/path?query#ref",
           "expect_rel": "http://another/path?query#ref"
         },
         {
-          "id": "391",
+          "id": "50",
           "name": "",
           "base": "http://host/a",
           "rel": "///another/path",
           "expect_rel": "http://another/path"
         },
         {
-          "id": "392",
+          "id": "51",
           "name": "",
           "base": "http://host/a",
           "rel": "//Another\\\\path",
           "expect_rel": "http://another/path"
         },
         {
-          "id": "393",
+          "id": "52",
           "name": "",
           "base": "http://host/a",
           "rel": "//",
           "expect_rel": "http:"
         },
         {
-          "id": "394",
+          "id": "53",
           "name": "",
           "base": "http://host/a",
           "rel": "\\\\/another/path",
           "expect_rel": "http://another/path"
         },
         {
-          "id": "395",
+          "id": "54",
           "name": "",
           "base": "http://host/a",
           "rel": "/\\\\Another\\\\path",
@@ -2624,13 +2624,13 @@
         "desc": "Test cases from Webkit's fast/url/scheme.js",
         "test": [
         {
-          "id": "396",
+          "id": "1",
           "name": "",
           "url": "http://example.com/",
           "expect_url": "http://example.com/"
         },
         {
-          "id": "397",
+          "id": "2",
           "name": "",
           "url": "HTTP://example.com/",
           "expect_url": "http://example.com/"
@@ -2643,7 +2643,7 @@
         "desc": "Test cases from Webkit's fast/url/segments-from-data-url.js",
         "test": [
         {
-          "id": "398",
+          "id": "1",
           "name": "",
           "rel": "http://user:pass@foo:21/bar;par?b#c",
           "base": "data:text/plain,baseURL",
@@ -2655,7 +2655,7 @@
           "expect_fragment": "#c"
         },
         {
-          "id": "399",
+          "id": "2",
           "name": "",
           "rel": "http:foo.com",
           "base": "data:text/plain,baseURL",
@@ -2667,7 +2667,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "400",
+          "id": "3",
           "name": "",
           "rel": "\u0009   :foo.com   \u000A",
           "base": "data:text/plain,baseURL",
@@ -2679,7 +2679,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "401",
+          "id": "4",
           "name": "",
           "rel": " foo.com  ",
           "base": "data:text/plain,baseURL",
@@ -2691,7 +2691,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "402",
+          "id": "5",
           "name": "",
           "rel": "a:\u0009 foo.com",
           "base": "data:text/plain,baseURL",
@@ -2703,7 +2703,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "403",
+          "id": "6",
           "name": "",
           "rel": "http://f:21/ b ? d # e ",
           "base": "data:text/plain,baseURL",
@@ -2715,7 +2715,7 @@
           "expect_fragment": "# e"
         },
         {
-          "id": "404",
+          "id": "7",
           "name": "",
           "rel": "http://f:/c",
           "base": "data:text/plain,baseURL",
@@ -2727,7 +2727,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "405",
+          "id": "8",
           "name": "",
           "rel": "http://f:0/c",
           "base": "data:text/plain,baseURL",
@@ -2739,7 +2739,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "406",
+          "id": "9",
           "name": "",
           "rel": "http://f:00000000000000/c",
           "base": "data:text/plain,baseURL",
@@ -2751,7 +2751,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "407",
+          "id": "10",
           "name": "",
           "rel": "http://f:00000000000000000000080/c",
           "base": "data:text/plain,baseURL",
@@ -2763,7 +2763,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "408",
+          "id": "11",
           "name": "",
           "rel": "http://f:b/c",
           "base": "data:text/plain,baseURL",
@@ -2775,7 +2775,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "409",
+          "id": "12",
           "name": "",
           "rel": "http://f: /c",
           "base": "data:text/plain,baseURL",
@@ -2787,7 +2787,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "410",
+          "id": "13",
           "name": "",
           "rel": "http://f:\u000A/c",
           "base": "data:text/plain,baseURL",
@@ -2799,7 +2799,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "411",
+          "id": "14",
           "name": "",
           "rel": "http://f:fifty-two/c",
           "base": "data:text/plain,baseURL",
@@ -2811,7 +2811,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "412",
+          "id": "15",
           "name": "",
           "rel": "http://f:999999/c",
           "base": "data:text/plain,baseURL",
@@ -2823,7 +2823,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "413",
+          "id": "16",
           "name": "",
           "rel": "http://f: 21 / b ? d # e ",
           "base": "data:text/plain,baseURL",
@@ -2835,7 +2835,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "414",
+          "id": "17",
           "name": "",
           "rel": "",
           "base": "data:text/plain,baseURL",
@@ -2847,7 +2847,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "415",
+          "id": "18",
           "name": "",
           "rel": "  \u0009",
           "base": "data:text/plain,baseURL",
@@ -2859,7 +2859,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "416",
+          "id": "19",
           "name": "",
           "rel": ":foo.com/",
           "base": "data:text/plain,baseURL",
@@ -2871,7 +2871,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "417",
+          "id": "20",
           "name": "",
           "rel": ":foo.com\\\\",
           "base": "data:text/plain,baseURL",
@@ -2883,7 +2883,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "418",
+          "id": "21",
           "name": "",
           "rel": ":",
           "base": "data:text/plain,baseURL",
@@ -2895,7 +2895,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "419",
+          "id": "22",
           "name": "",
           "rel": ":a",
           "base": "data:text/plain,baseURL",
@@ -2907,7 +2907,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "420",
+          "id": "23",
           "name": "",
           "rel": ":/",
           "base": "data:text/plain,baseURL",
@@ -2919,7 +2919,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "421",
+          "id": "24",
           "name": "",
           "rel": ":\\\\",
           "base": "data:text/plain,baseURL",
@@ -2931,7 +2931,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "422",
+          "id": "25",
           "name": "",
           "rel": ":#",
           "base": "data:text/plain,baseURL",
@@ -2943,7 +2943,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "423",
+          "id": "26",
           "name": "",
           "rel": "#",
           "base": "data:text/plain,baseURL",
@@ -2955,7 +2955,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "424",
+          "id": "27",
           "name": "",
           "rel": "#/",
           "base": "data:text/plain,baseURL",
@@ -2967,7 +2967,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "425",
+          "id": "28",
           "name": "",
           "rel": "#\\\\",
           "base": "data:text/plain,baseURL",
@@ -2979,7 +2979,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "426",
+          "id": "29",
           "name": "",
           "rel": "#;?",
           "base": "data:text/plain,baseURL",
@@ -2991,7 +2991,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "427",
+          "id": "30",
           "name": "",
           "rel": "?",
           "base": "data:text/plain,baseURL",
@@ -3003,7 +3003,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "428",
+          "id": "31",
           "name": "",
           "rel": "/",
           "base": "data:text/plain,baseURL",
@@ -3015,7 +3015,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "429",
+          "id": "32",
           "name": "",
           "rel": ":23",
           "base": "data:text/plain,baseURL",
@@ -3027,7 +3027,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "430",
+          "id": "33",
           "name": "",
           "rel": "/:23",
           "base": "data:text/plain,baseURL",
@@ -3039,7 +3039,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "431",
+          "id": "34",
           "name": "",
           "rel": "//",
           "base": "data:text/plain,baseURL",
@@ -3051,7 +3051,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "432",
+          "id": "35",
           "name": "",
           "rel": "::",
           "base": "data:text/plain,baseURL",
@@ -3063,7 +3063,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "433",
+          "id": "36",
           "name": "",
           "rel": "::23",
           "base": "data:text/plain,baseURL",
@@ -3075,7 +3075,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "434",
+          "id": "37",
           "name": "",
           "rel": "foo://",
           "base": "data:text/plain,baseURL",
@@ -3087,7 +3087,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "435",
+          "id": "38",
           "name": "",
           "rel": "http://a:b@c:29/d",
           "base": "data:text/plain,baseURL",
@@ -3099,7 +3099,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "436",
+          "id": "39",
           "name": "",
           "rel": "http::@c:29",
           "base": "data:text/plain,baseURL",
@@ -3111,7 +3111,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "437",
+          "id": "40",
           "name": "",
           "rel": "http://&amp;a:foo(b]c@d:2/",
           "base": "data:text/plain,baseURL",
@@ -3123,7 +3123,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "438",
+          "id": "41",
           "name": "",
           "rel": "http://::@c@d:2",
           "base": "data:text/plain,baseURL",
@@ -3135,7 +3135,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "439",
+          "id": "42",
           "name": "",
           "rel": "http://foo.com:b@d/",
           "base": "data:text/plain,baseURL",
@@ -3147,7 +3147,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "440",
+          "id": "43",
           "name": "",
           "rel": "http://foo.com/\\\\@",
           "base": "data:text/plain,baseURL",
@@ -3159,7 +3159,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "441",
+          "id": "44",
           "name": "",
           "rel": "http:\\\\\\\\foo.com\\\\",
           "base": "data:text/plain,baseURL",
@@ -3171,7 +3171,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "442",
+          "id": "45",
           "name": "",
           "rel": "http:\\\\\\\\a\\\\b:c\\\\d@foo.com\\\\",
           "base": "data:text/plain,baseURL",
@@ -3183,7 +3183,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "443",
+          "id": "46",
           "name": "",
           "rel": "foo:/",
           "base": "data:text/plain,baseURL",
@@ -3195,7 +3195,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "444",
+          "id": "47",
           "name": "",
           "rel": "foo:/bar.com/",
           "base": "data:text/plain,baseURL",
@@ -3207,7 +3207,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "445",
+          "id": "48",
           "name": "",
           "rel": "foo://///////",
           "base": "data:text/plain,baseURL",
@@ -3219,7 +3219,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "446",
+          "id": "49",
           "name": "",
           "rel": "foo://///////bar.com/",
           "base": "data:text/plain,baseURL",
@@ -3231,7 +3231,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "447",
+          "id": "50",
           "name": "",
           "rel": "foo:////://///",
           "base": "data:text/plain,baseURL",
@@ -3243,7 +3243,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "448",
+          "id": "51",
           "name": "",
           "rel": "c:/foo",
           "base": "data:text/plain,baseURL",
@@ -3255,7 +3255,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "449",
+          "id": "52",
           "name": "",
           "rel": "//foo/bar",
           "base": "data:text/plain,baseURL",
@@ -3267,7 +3267,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "450",
+          "id": "53",
           "name": "",
           "rel": "http://foo/path;a??e#f#g",
           "base": "data:text/plain,baseURL",
@@ -3279,7 +3279,7 @@
           "expect_fragment": "#f#g"
         },
         {
-          "id": "451",
+          "id": "54",
           "name": "",
           "rel": "http://foo/abcd?efgh?ijkl",
           "base": "data:text/plain,baseURL",
@@ -3291,7 +3291,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "452",
+          "id": "55",
           "name": "",
           "rel": "http://foo/abcd#foo?bar",
           "base": "data:text/plain,baseURL",
@@ -3303,7 +3303,7 @@
           "expect_fragment": "#foo?bar"
         },
         {
-          "id": "453",
+          "id": "56",
           "name": "",
           "rel": "[61:24:74]:98",
           "base": "data:text/plain,baseURL",
@@ -3315,7 +3315,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "454",
+          "id": "57",
           "name": "",
           "rel": "http://[61:27]:98",
           "base": "data:text/plain,baseURL",
@@ -3327,7 +3327,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "455",
+          "id": "58",
           "name": "",
           "rel": "http:[61:27]/:foo",
           "base": "data:text/plain,baseURL",
@@ -3339,7 +3339,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "456",
+          "id": "59",
           "name": "",
           "rel": "http://[1::2]:3:4",
           "base": "data:text/plain,baseURL",
@@ -3351,7 +3351,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "457",
+          "id": "60",
           "name": "",
           "rel": "http://2001::1",
           "base": "data:text/plain,baseURL",
@@ -3363,7 +3363,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "458",
+          "id": "61",
           "name": "",
           "rel": "http://[2001::1",
           "base": "data:text/plain,baseURL",
@@ -3375,7 +3375,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "459",
+          "id": "62",
           "name": "",
           "rel": "http://2001::1]",
           "base": "data:text/plain,baseURL",
@@ -3387,7 +3387,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "460",
+          "id": "63",
           "name": "",
           "rel": "http://2001::1]:80",
           "base": "data:text/plain,baseURL",
@@ -3399,7 +3399,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "461",
+          "id": "64",
           "name": "",
           "rel": "http://[2001::1]",
           "base": "data:text/plain,baseURL",
@@ -3411,7 +3411,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "462",
+          "id": "65",
           "name": "",
           "rel": "http://[2001::1]:80",
           "base": "data:text/plain,baseURL",
@@ -3423,7 +3423,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "463",
+          "id": "66",
           "name": "",
           "rel": "http://[[::]]",
           "base": "data:text/plain,baseURL",
@@ -3442,7 +3442,7 @@
         "desc": "Test cases from Webkit's fast/url/segments.js",
         "test": [
         {
-          "id": "464",
+          "id": "1",
           "name": "",
           "rel": "http://user:pass@foo:21/bar;par?b#c",
           "base": "http://www.example.com/foo/bar",
@@ -3454,7 +3454,7 @@
           "expect_fragment": "#c"
         },
         {
-          "id": "465",
+          "id": "2",
           "name": "",
           "rel": "http:foo.com",
           "base": "http://www.example.com/foo/bar",
@@ -3466,7 +3466,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "466",
+          "id": "3",
           "name": "",
           "rel": "\u0009   :foo.com   \u000A",
           "base": "http://www.example.com/foo/bar",
@@ -3478,7 +3478,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "467",
+          "id": "4",
           "name": "",
           "rel": " foo.com  ",
           "base": "http://www.example.com/foo/bar",
@@ -3490,7 +3490,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "468",
+          "id": "5",
           "name": "",
           "rel": "a:\u0009 foo.com",
           "base": "http://www.example.com/foo/bar",
@@ -3502,7 +3502,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "469",
+          "id": "6",
           "name": "",
           "rel": "http://f:21/ b ? d # e ",
           "base": "http://www.example.com/foo/bar",
@@ -3514,7 +3514,7 @@
           "expect_fragment": "# e"
         },
         {
-          "id": "470",
+          "id": "7",
           "name": "",
           "rel": "http://f:/c",
           "base": "http://www.example.com/foo/bar",
@@ -3526,7 +3526,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "471",
+          "id": "8",
           "name": "",
           "rel": "http://f:0/c",
           "base": "http://www.example.com/foo/bar",
@@ -3538,7 +3538,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "472",
+          "id": "9",
           "name": "",
           "rel": "http://f:00000000000000/c",
           "base": "http://www.example.com/foo/bar",
@@ -3550,7 +3550,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "473",
+          "id": "10",
           "name": "",
           "rel": "http://f:00000000000000000000080/c",
           "base": "http://www.example.com/foo/bar",
@@ -3562,7 +3562,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "474",
+          "id": "11",
           "name": "",
           "rel": "http://f:b/c",
           "base": "http://www.example.com/foo/bar",
@@ -3574,7 +3574,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "475",
+          "id": "12",
           "name": "",
           "rel": "http://f: /c",
           "base": "http://www.example.com/foo/bar",
@@ -3586,7 +3586,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "476",
+          "id": "13",
           "name": "",
           "rel": "http://f:\u000A/c",
           "base": "http://www.example.com/foo/bar",
@@ -3598,7 +3598,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "477",
+          "id": "14",
           "name": "",
           "rel": "http://f:fifty-two/c",
           "base": "http://www.example.com/foo/bar",
@@ -3610,7 +3610,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "478",
+          "id": "15",
           "name": "",
           "rel": "http://f:999999/c",
           "base": "http://www.example.com/foo/bar",
@@ -3622,7 +3622,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "479",
+          "id": "16",
           "name": "",
           "rel": "http://f: 21 / b ? d # e ",
           "base": "http://www.example.com/foo/bar",
@@ -3634,7 +3634,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "480",
+          "id": "17",
           "name": "",
           "base": "http://www.example.com/foo/bar",
           "expect_scheme": "http:",
@@ -3645,7 +3645,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "481",
+          "id": "18",
           "name": "",
           "rel": "  \u0009",
           "base": "http://www.example.com/foo/bar",
@@ -3657,7 +3657,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "482",
+          "id": "19",
           "name": "",
           "rel": ":foo.com/",
           "base": "http://www.example.com/foo/bar",
@@ -3669,7 +3669,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "483",
+          "id": "20",
           "name": "",
           "rel": ":foo.com\\\\",
           "base": "http://www.example.com/foo/bar",
@@ -3681,7 +3681,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "484",
+          "id": "21",
           "name": "",
           "rel": ":",
           "base": "http://www.example.com/foo/bar",
@@ -3693,7 +3693,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "485",
+          "id": "22",
           "name": "",
           "rel": ":a",
           "base": "http://www.example.com/foo/bar",
@@ -3705,7 +3705,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "486",
+          "id": "23",
           "name": "",
           "rel": ":/",
           "base": "http://www.example.com/foo/bar",
@@ -3717,7 +3717,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "487",
+          "id": "24",
           "name": "",
           "rel": ":\\\\",
           "base": "http://www.example.com/foo/bar",
@@ -3729,7 +3729,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "488",
+          "id": "25",
           "name": "",
           "rel": ":#",
           "base": "http://www.example.com/foo/bar",
@@ -3741,7 +3741,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "489",
+          "id": "26",
           "name": "",
           "rel": "#",
           "base": "http://www.example.com/foo/bar",
@@ -3753,7 +3753,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "490",
+          "id": "27",
           "name": "",
           "rel": "#/",
           "base": "http://www.example.com/foo/bar",
@@ -3765,7 +3765,7 @@
           "expect_fragment": "#/"
         },
         {
-          "id": "491",
+          "id": "28",
           "name": "",
           "rel": "#\\\\",
           "base": "http://www.example.com/foo/bar",
@@ -3777,7 +3777,7 @@
           "expect_fragment": "#\\\\"
         },
         {
-          "id": "492",
+          "id": "29",
           "name": "",
           "rel": "#;?",
           "base": "http://www.example.com/foo/bar",
@@ -3789,7 +3789,7 @@
           "expect_fragment": "#;?"
         },
         {
-          "id": "493",
+          "id": "30",
           "name": "",
           "rel": "?",
           "base": "http://www.example.com/foo/bar",
@@ -3801,7 +3801,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "494",
+          "id": "31",
           "name": "",
           "rel": "/",
           "base": "http://www.example.com/foo/bar",
@@ -3813,7 +3813,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "495",
+          "id": "32",
           "name": "",
           "rel": ":23",
           "base": "http://www.example.com/foo/bar",
@@ -3825,7 +3825,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "496",
+          "id": "33",
           "name": "",
           "rel": "/:23",
           "base": "http://www.example.com/foo/bar",
@@ -3837,7 +3837,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "497",
+          "id": "34",
           "name": "",
           "rel": "//",
           "base": "http://www.example.com/foo/bar",
@@ -3849,7 +3849,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "498",
+          "id": "35",
           "name": "",
           "rel": "::",
           "base": "http://www.example.com/foo/bar",
@@ -3861,7 +3861,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "499",
+          "id": "36",
           "name": "",
           "rel": "::23",
           "base": "http://www.example.com/foo/bar",
@@ -3873,7 +3873,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "500",
+          "id": "37",
           "name": "",
           "rel": "foo://",
           "base": "http://www.example.com/foo/bar",
@@ -3885,7 +3885,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "501",
+          "id": "38",
           "name": "",
           "rel": "http://a:b@c:29/d",
           "base": "http://www.example.com/foo/bar",
@@ -3897,7 +3897,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "502",
+          "id": "39",
           "name": "",
           "rel": "http::@c:29",
           "base": "http://www.example.com/foo/bar",
@@ -3909,7 +3909,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "503",
+          "id": "40",
           "name": "",
           "rel": "http://&amp;a:foo(b]c@d:2/",
           "base": "http://www.example.com/foo/bar",
@@ -3921,7 +3921,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "504",
+          "id": "41",
           "name": "",
           "rel": "http://::@c@d:2",
           "base": "http://www.example.com/foo/bar",
@@ -3933,7 +3933,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "505",
+          "id": "42",
           "name": "",
           "rel": "http://foo.com:b@d/",
           "base": "http://www.example.com/foo/bar",
@@ -3945,7 +3945,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "506",
+          "id": "43",
           "name": "",
           "rel": "http://foo.com/\\\\@",
           "base": "http://www.example.com/foo/bar",
@@ -3957,7 +3957,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "507",
+          "id": "44",
           "name": "",
           "rel": "http:\\\\\\\\foo.com\\\\",
           "base": "http://www.example.com/foo/bar",
@@ -3969,7 +3969,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "508",
+          "id": "45",
           "name": "",
           "rel": "http:\\\\\\\\a\\\\b:c\\\\d@foo.com\\\\",
           "base": "http://www.example.com/foo/bar",
@@ -3981,7 +3981,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "509",
+          "id": "46",
           "name": "",
           "rel": "foo:/",
           "base": "http://www.example.com/foo/bar",
@@ -3993,7 +3993,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "510",
+          "id": "47",
           "name": "",
           "rel": "foo:/bar.com/",
           "base": "http://www.example.com/foo/bar",
@@ -4005,7 +4005,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "511",
+          "id": "48",
           "name": "",
           "rel": "foo://///////",
           "base": "http://www.example.com/foo/bar",
@@ -4017,7 +4017,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "512",
+          "id": "49",
           "name": "",
           "rel": "foo://///////bar.com/",
           "base": "http://www.example.com/foo/bar",
@@ -4029,7 +4029,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "513",
+          "id": "50",
           "name": "",
           "rel": "foo:////://///",
           "base": "http://www.example.com/foo/bar",
@@ -4041,7 +4041,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "514",
+          "id": "51",
           "name": "",
           "rel": "c:/foo",
           "base": "http://www.example.com/foo/bar",
@@ -4053,7 +4053,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "515",
+          "id": "52",
           "name": "",
           "rel": "//foo/bar",
           "base": "http://www.example.com/foo/bar",
@@ -4065,7 +4065,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "516",
+          "id": "53",
           "name": "",
           "rel": "http://foo/path;a??e#f#g",
           "base": "http://www.example.com/foo/bar",
@@ -4077,7 +4077,7 @@
           "expect_fragment": "#f#g"
         },
         {
-          "id": "517",
+          "id": "54",
           "name": "",
           "rel": "http://foo/abcd?efgh?ijkl",
           "base": "http://www.example.com/foo/bar",
@@ -4089,7 +4089,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "518",
+          "id": "55",
           "name": "",
           "rel": "http://foo/abcd#foo?bar",
           "base": "http://www.example.com/foo/bar",
@@ -4101,7 +4101,7 @@
           "expect_fragment": "#foo?bar"
         },
         {
-          "id": "519",
+          "id": "56",
           "name": "",
           "rel": "[61:24:74]:98",
           "base": "http://www.example.com/foo/bar",
@@ -4113,7 +4113,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "520",
+          "id": "57",
           "name": "",
           "rel": "http://[61:27]:98",
           "base": "http://www.example.com/foo/bar",
@@ -4125,7 +4125,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "521",
+          "id": "58",
           "name": "",
           "rel": "http:[61:27]/:foo",
           "base": "http://www.example.com/foo/bar",
@@ -4137,7 +4137,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "522",
+          "id": "59",
           "name": "",
           "rel": "http://[1::2]:3:4",
           "base": "http://www.example.com/foo/bar",
@@ -4149,7 +4149,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "523",
+          "id": "60",
           "name": "",
           "rel": "http://2001::1",
           "base": "http://www.example.com/foo/bar",
@@ -4161,7 +4161,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "524",
+          "id": "61",
           "name": "",
           "rel": "http://[2001::1",
           "base": "http://www.example.com/foo/bar",
@@ -4173,7 +4173,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "525",
+          "id": "62",
           "name": "",
           "rel": "http://2001::1]",
           "base": "http://www.example.com/foo/bar",
@@ -4185,7 +4185,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "526",
+          "id": "63",
           "name": "",
           "rel": "http://2001::1]:80",
           "base": "http://www.example.com/foo/bar",
@@ -4197,7 +4197,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "527",
+          "id": "64",
           "name": "",
           "rel": "http://[2001::1]",
           "base": "http://www.example.com/foo/bar",
@@ -4209,7 +4209,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "528",
+          "id": "65",
           "name": "",
           "rel": "http://[2001::1]:80",
           "base": "http://www.example.com/foo/bar",
@@ -4221,7 +4221,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "529",
+          "id": "66",
           "name": "",
           "rel": "http://[[::]]",
           "base": "http://www.example.com/foo/bar",
@@ -4240,163 +4240,163 @@
         "desc": "Test cases from Webkit's fast/url/standard-url.js",
         "test": [
         {
-          "id": "530",
+          "id": "1",
           "name": "",
           "url": "http://www.google.com/foo?bar=baz#",
           "expect_url": "http://www.google.com/foo?bar=baz#"
         },
         {
-          "id": "531",
+          "id": "2",
           "name": "",
           "url": "http://[www.google.com]/",
           "expect_url": "http://[www.google.com]/"
         },
         {
-          "id": "532",
+          "id": "3",
           "name": "",
           "url": "http:////////user:@google.com:99?foo",
           "expect_url": "http://user@google.com:99/?foo"
         },
         {
-          "id": "533",
+          "id": "4",
           "name": "",
           "url": "http://192.0x00A80001",
           "expect_url": "http://192.168.0.1/"
         },
         {
-          "id": "534",
+          "id": "5",
           "name": "",
           "url": "http://www/foo%2Ehtml",
           "expect_url": "http://www/foo.html"
         },
         {
-          "id": "535",
+          "id": "6",
           "name": "",
           "url": "http://user:pass@/",
           "expect_url": "http://user:pass@/"
         },
         {
-          "id": "536",
+          "id": "7",
           "name": "",
           "url": "http://%25DOMAIN:foobar@foodomain.com/",
           "expect_url": "http://%25DOMAIN:foobar@foodomain.com/"
         },
         {
-          "id": "537",
+          "id": "8",
           "name": "",
           "url": "http:\\\\\\\\www.google.com\\\\foo",
           "expect_url": "http://www.google.com/foo"
         },
         {
-          "id": "538",
+          "id": "9",
           "name": "",
           "url": "http://www.google.com/asdf#\\\ud800",
           "expect_url": "http://www.google.com/asdf#\\\uFFFD"
         },
         {
-          "id": "539",
+          "id": "10",
           "name": "",
           "url": "http://foo:80/",
           "expect_url": "http://foo/"
         },
         {
-          "id": "540",
+          "id": "11",
           "name": "",
           "url": "http://foo:81/",
           "expect_url": "http://foo:81/"
         },
         {
-          "id": "541",
+          "id": "12",
           "name": "",
           "url": "httpa://foo:80/",
           "expect_url": "httpa://foo:80/"
         },
         {
-          "id": "542",
+          "id": "13",
           "name": "",
           "url": "http://foo:-80/",
           "expect_url": "http://foo:-80/"
         },
         {
-          "id": "543",
+          "id": "14",
           "name": "",
           "url": "https://foo:443/",
           "expect_url": "https://foo/"
         },
         {
-          "id": "544",
+          "id": "15",
           "name": "",
           "url": "https://foo:80/",
           "expect_url": "https://foo:80/"
         },
         {
-          "id": "545",
+          "id": "16",
           "name": "",
           "url": "ftp://foo:21/",
           "expect_url": "ftp://foo/"
         },
         {
-          "id": "546",
+          "id": "17",
           "name": "",
           "url": "ftp://foo:80/",
           "expect_url": "ftp://foo:80/"
         },
         {
-          "id": "547",
+          "id": "18",
           "name": "",
           "url": "gopher://foo:70/",
           "expect_url": "gopher://foo/"
         },
         {
-          "id": "548",
+          "id": "19",
           "name": "",
           "url": "gopher://foo:443/",
           "expect_url": "gopher://foo:443/"
         },
         {
-          "id": "549",
+          "id": "20",
           "name": "",
           "url": "ws://foo:80/",
           "expect_url": "ws://foo/"
         },
         {
-          "id": "550",
+          "id": "21",
           "name": "",
           "url": "ws://foo:81/",
           "expect_url": "ws://foo:81/"
         },
         {
-          "id": "551",
+          "id": "22",
           "name": "",
           "url": "ws://foo:443/",
           "expect_url": "ws://foo:443/"
         },
         {
-          "id": "552",
+          "id": "23",
           "name": "",
           "url": "ws://foo:815/",
           "expect_url": "ws://foo:815/"
         },
         {
-          "id": "553",
+          "id": "24",
           "name": "",
           "url": "wss://foo:80/",
           "expect_url": "wss://foo:80/"
         },
         {
-          "id": "554",
+          "id": "25",
           "name": "",
           "url": "wss://foo:81/",
           "expect_url": "wss://foo:81/"
         },
         {
-          "id": "555",
+          "id": "26",
           "name": "",
           "url": "wss://foo:443/",
           "expect_url": "wss://foo/"
         },
         {
-          "id": "556",
+          "id": "27",
           "name": "",
           "url": "wss://foo:815/",
           "expect_url": "wss://foo:815/"
@@ -4408,7 +4408,7 @@
         "link": "http://trac.webkit.org/browser/trunk/LayoutTests/fast/url/script-tests/trivial-segments.js",
         "desc": "Test cases from Webkit's fast/url/trivial-segments.js",
         "test": {
-          "id": "557",
+          "id": "1",
           "name": "",
           "rel": "http://example.com/",
           "base": "http://example.org/foo/bar",
@@ -4426,14 +4426,14 @@
         "desc": "Test cases from Webkit's fast/url/trivial.js",
         "test": [
         {
-          "id": "558",
+          "id": "1",
           "name": "",
           "base": "http://example.org/foo/bar",
           "rel": "http://example.com/",
           "expect_rel": "http://example.com/"
         },
         {
-          "id": "559",
+          "id": "2",
           "name": "",
           "base": "http://example.org/foo/bar",
           "rel": "/",
@@ -4447,7 +4447,7 @@
         "desc": "Test cases for normalization behaviors - see http://www.unicode.org/reports/tr15/ Figure 6 and RFC3987",
         "test": [
         {
-          "id": "560",
+          "id": "1",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4455,7 +4455,7 @@
           "expect_rel": "re&#x301;sume&#x301;/re&#x301;sume&#x301;.html"
         },
         {
-          "id": "561",
+          "id": "2",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4463,7 +4463,7 @@
           "expect_rel": "r&#xE9;sum&#xE9;.html"
         },
         {
-          "id": "562",
+          "id": "3",
           "name": "",
           "charset": "windows-1258",
           "base": "http://www.example.com/",
@@ -4471,7 +4471,7 @@
           "expect_rel": "Vi&#xEA;&#x323;tNam.html"
         },
         {
-          "id": "563",
+          "id": "4",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4479,7 +4479,7 @@
           "expect_rel": "\uFB01?\uFB01#\uFB01"
         },
         {
-          "id": "564",
+          "id": "5",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4487,7 +4487,7 @@
           "expect_rel": "?re&#x301;sume&#x301;#re&#x301;sume&#x301;"
         },
         {
-          "id": "565",
+          "id": "6",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4495,7 +4495,7 @@
           "expect_rel": "2\u2075?2\u2075#2\u2075"
         },
         {
-          "id": "566",
+          "id": "7",
           "name": "",
           "charset": "windows-1258",
           "base": "http://www.example.com/",
@@ -4503,7 +4503,7 @@
           "expect_rel": "?Vi&#xEA;&#x323;tNam#Vi&#xEA;&#x323;tNam"
         },
         {
-          "id": "567",
+          "id": "8",
           "name": "",
           "charset": "windows-1258",
           "base": "http://www.example.com/",
@@ -4511,7 +4511,7 @@
           "expect_rel": "foo?q=\u2665"
         },
         {
-          "id": "568",
+          "id": "9",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4519,7 +4519,7 @@
           "expect_rel": "\u1E9B\u0323/?\u1E9B\u0323#\u1E9B\u0323"
         },
         {
-          "id": "569",
+          "id": "10",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4527,7 +4527,7 @@
           "expect_rel": "\u1E9B\u0323/?\u1E9B\u0323#\u1E9B\u0323"
         },
         {
-          "id": "570",
+          "id": "11",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4535,7 +4535,7 @@
           "expect_rel": "\u1E9B\u0323/?\u1E9B\u0323#\u1E9B\u0323"
         },
         {
-          "id": "571",
+          "id": "12",
           "name": "",
           "charset": "utf-8",
           "base": "http://www.example.com/",
@@ -4550,13 +4550,13 @@
         "desc": "Various references with white space",
         "test": [
         {
-          "id": "572",
+          "id": "1",
           "name": "",
           "url": "http://www.example.com/foo    bar/?   foo   =   bar     #    foo",
           "expect_url": "http://www.example.com/foo    bar/?   foo   =   bar     #    foo"
         },
         {
-          "id": "573",
+          "id": "2",
           "name": "",
           "url": "http://www.example.com/ ",
           "expect_url": "http://www.example.com/ "
@@ -4569,56 +4569,56 @@
         "desc": "Test how percent-encoding is handled",
         "test": [
         {
-          "id": "573",
+          "id": "1",
           "name": "Test if delimeters such as \"?\" are unencoded",
           "charset": "utf-8",
           "url": "http://www.example.com/foo%3fbar",
           "expect_url": "http://www.example.com/foo?bar"
         },
         {
-          "id": "574",
+          "id": "2",
           "name": "Test if delimeters such as \"/\" are unencoded",
           "charset": "utf-8",
           "url": "http://www.example.com/foo%2fbar",
           "expect_url": "http://www.example.com/foo/bar"
         },
         {
-          "id": "575",
+          "id": "3",
           "name": "Test if entire string is unencoded",
           "charset": "utf-8",
           "url": "%68%74%74%70%3a%2f%2f%77%77%77%2e%65%78%61%6d%70%6c%65%2e%63%6f%6d%2f",
           "expect_url": "http://www.example.com/"
         },
         {
-          "id": "576",
+          "id": "4",
           "name": "Test if scheme gets unencoded",
           "charset": "utf-8",
           "url": "http%3a%2f%2f%77%77%77%2e%65%78%61%6d%70%6c%65%2e%63%6f%6d%2f",
           "expect_url": "http://www.example.com/"
         },
         {
-          "id": "577",
+          "id": "5",
           "name": "Test if authority and port gets unencoded",
           "charset": "utf-8",
           "url": "http://%77%77%77%2e%65%78%61%6d%70%6c%65%2e%63%6f%6d%3a%38%30",
           "expect_url": "http://www.example.com:80/"
         },
         {
-          "id": "578",
+          "id": "6",
           "name": "",
           "charset": "iso-8859-1",
           "url": "http://%A1%C1.com",
           "expect_url": "http://¡À.com"
         },
         {
-          "id": "579",
+          "id": "7",
           "name": "Test mixed encodings",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/%A1%C1/?foo=%EF%BD%81",
           "expect_url": "http://www.example.com/%A1%C1/?foo=%EF%BD%81"
         },
         {
-          "id": "580",
+          "id": "8",
           "name": "Test mixed encodings",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/%EF%BD%81/?foo=%A1%C1",
@@ -4626,49 +4626,49 @@
           "comment": "."
         },
         {
-          "id": "581",
+          "id": "9",
           "name": "Test mixed encodings",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/ＦＯＯ/?foo=%A1%C1",
           "expect_url": "http://www.example.com/ＦＯＯ/?foo=%A1%C1"
         },
         {
-          "id": "582",
+          "id": "10",
           "name": "Test mixed encodings",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/%A1%C1/?foo=ＦＯＯ",
           "expect_url": "http://www.example.com/%A1%C1/?foo=ＦＯＯ"
         },
         {
-          "id": "583",
+          "id": "11",
           "name": "Test mixed encodings",
           "charset": "utf-8",
           "url": "http://www.example.com/ＦＯＯ/?foo=%A1%C1",
           "expect_url": "http://www.example.com/ＦＯＯ/?foo=%A1%C1"
         },
         {
-          "id": "584",
+          "id": "12",
           "name": "The Martin Dürst test",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/D%FCrst",
           "expect_url": "http://www.example.com/D%FCrst"
         },
         {
-          "id": "585",
+          "id": "13",
           "name": "The Martin Dürst test",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/D%C3%BCrst",
           "expect_url": "http://www.example.com/D%C3%BCrst"
         },
         {
-          "id": "586",
+          "id": "14",
           "name": "The Martin Dürst test",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/?D%FCrst",
           "expect_url": "http://www.example.com/?D%FCrst"
         },
         {
-          "id": "587",
+          "id": "15",
           "name": "The Martin Dürst test",
           "charset": "iso-8859-1",
           "url": "http://www.example.com/?D%C3%BCrst",
@@ -4682,7 +4682,7 @@
         "desc": "Misc test cases",
         "test": [
         {
-          "id": "588",
+          "id": "1",
           "name": "",
           "url": "http://user%40example.com/",
           "expect_url": "http://user@example.com/",
@@ -4694,7 +4694,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "589",
+          "id": "2",
           "name": "",
           "url": "http://user%3Ainfo%40/",
           "expect_url": "http://user:info@/",
@@ -4706,7 +4706,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "590",
+          "id": "3",
           "name": "",
           "url": "http://user@/",
           "expect_url": "http://user@/",
@@ -4718,7 +4718,7 @@
           "expect_fragment": ""
         },
         {
-          "id": "594",
+          "id": "4",
           "name": "",
           "url": "$:foo/bar",
           "expect_url": "$:",
