@@ -125,13 +125,6 @@
           "expect_rel": "file:///C:/foo/bar"
         },
         {
-          "id": "9",
-          "name": "",
-          "base": "http://www.example.com/foo/bar",
-          "rel": "//server/file",
-          "expect_rel": "file://server/file"
-        },
-        {
           "id": "10",
           "name": "",
           "base": "http://www.example.com/foo/bar",
@@ -214,27 +207,6 @@
           "base": "http://www.example.com/foo/bar",
           "rel": "file:c|//foo\\\\bar.html",
           "expect_rel": "file:///c%7C//foo/bar.html"
-        },
-        {
-          "id": "22",
-          "name": "",
-          "base": "http://www.example.com/foo/bar",
-          "rel": "//",
-          "expect_rel": "file:///"
-        },
-        {
-          "id": "23",
-          "name": "",
-          "base": "http://www.example.com/foo/bar",
-          "rel": "///",
-          "expect_rel": "file:///"
-        },
-        {
-          "id": "24",
-          "name": "",
-          "base": "http://www.example.com/foo/bar",
-          "rel": "///test",
-          "expect_rel": "file:///test"
         },
         {
           "id": "25",
@@ -464,7 +436,7 @@
           "id": "1",
           "name": "A pathless URL",
           "url": "http://google.com",
-          "expect_url": "http://google.com"
+          "expect_url": "http://google.com/"
         },
         {
           "id": "2",
@@ -723,6 +695,12 @@
           "name": "",
           "url": "http://@google.com/",
           "expect_url": "http://google.com/"
+        },
+        {
+          "id": "45",
+          "name": "A URL with a pipe character in the hostname.",
+          "url": "http://c|/",
+          "expect_url": "http://c|/"
         }
         ]
       },
