@@ -76,7 +76,8 @@ for (var i = 0; i < data.tests.group.length; i++) {
                         testcase.expect_query,
                         testcase.expect_fragment);
     }
-    else if (group.name == "Miscellaneous test cases"
+    else if (group.name == "miscellaneous" ||
+             group.name == "data-scheme"
              ) {
         test_components(group.name + " - " + testcase.id, 
                         testcase.url,
