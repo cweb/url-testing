@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      p { font-weight: bold; font-size: 1.2em; }
+      .box { 1px dashed crimson; }
+      .title { width: 100px; float: left; }
+      .title:after { content: ":"; }
+      .input { width: 90%; margin: 10px; }
+      .output { color: blue; }
+    </style>
+    <script>
+      function parse(url) {
+        var target = document.getElementById("target");
+        target.setAttribute("href", url); 
+
+        var href = document.getElementById("href");
+        href.innerText = target.href;
+        var hash = document.getElementById("hash");
+        hash.innerText = target.hash;
+        var hostname = document.getElementById("hostname");
+        hostname.innerText = target.hostname;
+        var pathname = document.getElementById("pathname");
+        pathname.innerText = target.pathname;
+        var port = document.getElementById("port");
+        port.innerText = target.port;
+        var protocol = document.getElementById("protocol");
+        protocol.innerText = target.protocol;
+        var search = document.getElementById("search");
+        search.innerText = target.search;
+      }
+    </script>
+  </head>
+  <p>Enter a URL to parse:</p>
+  <input type="text" value="http://example.com" class="input" id="url"
+  onkeyup="parse(this.value)">  
+  <a href="" id="target"></a>
+
+  <p>DOM Properties:</p>
+  <div class="box">
+    <span class="title">href</span><span class="output" id="href"></span><br
+    />
+    <span class="title">hash</span><span class="output" id="hash"></span><br
+    />
+    <span class="title">hostname</span><span class="output"
+      id="hostname"></span><br />
+    <span class="title">pathname</span><span class="output"
+      id="pathname"></span><br />
+    <span class="title">port</span><span class="output" id="port"></span><br
+    />
+    <span class="title">protocol</span><span class="output"
+      id="protocol"></span><br />
+    <span class="title">search</span><span class="output"
+      id="search"></span><br />
+  </div>
+</html>
