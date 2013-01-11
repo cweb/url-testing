@@ -1,55 +1,128 @@
 <html>
   <head>
-    <style>
-      p { font-weight: bold; font-size: 1.2em; }
-      .box { 1px dashed crimson; }
-      .title { width: 100px; float: left; }
-      .title:after { content: ":"; }
-      .input { width: 90%; margin: 10px; }
-      .output { color: blue; }
-    </style>
-    <script>
-      function parse(url) {
-        var target = document.getElementById("target");
-        target.setAttribute("href", url); 
+    <meta name="author" content="Chris Weber">
+    <meta name="copyright" content="&copy; 2013 Chris Weber">
+    <meta name="description" content="Web browser test page for
+    URL parsing">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="url.js"></script>
 
-        var href = document.getElementById("href");
-        href.innerText = target.href;
-        var hash = document.getElementById("hash");
-        hash.innerText = target.hash;
-        var hostname = document.getElementById("hostname");
-        hostname.innerText = target.hostname;
-        var pathname = document.getElementById("pathname");
-        pathname.innerText = target.pathname;
-        var port = document.getElementById("port");
-        port.innerText = target.port;
-        var protocol = document.getElementById("protocol");
-        protocol.innerText = target.protocol;
-        var search = document.getElementById("search");
-        search.innerText = target.search;
-      }
-    </script>
   </head>
-  <p>Enter a URL to parse:</p>
+  <h2>Enter a URL to parse:</h2>
+  <p>The output below will display a URL's parsed components from both the
+  browser's DOM, and from the <a href="https://github.com/annevk/url">URL.js
+    project</a> being done for the <a
+    href="http://url.spec.whatwg.org/">WHATWG URL spec.</a></p>
   <input type="text" value="http://example.com" class="input" id="url"
   onkeyup="parse(this.value)">  
   <a href="" id="target"></a>
 
-  <p>DOM Properties:</p>
-  <div class="box">
-    <span class="title">href</span><span class="output" id="href"></span><br
+  <h2>URL components from DOM properties:</h2>
+  <div class="output">
+    <span class="title">href</span><span class="result" id="domHref"></span><br
     />
-    <span class="title">hash</span><span class="output" id="hash"></span><br
+    <span class="title">hash</span><span class="result" id="domHash"></span><br
     />
-    <span class="title">hostname</span><span class="output"
-      id="hostname"></span><br />
-    <span class="title">pathname</span><span class="output"
-      id="pathname"></span><br />
-    <span class="title">port</span><span class="output" id="port"></span><br
+    <span class="title">hostname</span><span class="result"
+      id="domHostname"></span><br />
+    <span class="title">pathname</span><span class="result"
+      id="domPathname"></span><br />
+    <span class="title">port</span><span class="result" id="domPort"></span><br
     />
-    <span class="title">protocol</span><span class="output"
-      id="protocol"></span><br />
-    <span class="title">search</span><span class="output"
-      id="search"></span><br />
+    <span class="title">protocol</span><span class="result"
+      id="domProtocol"></span><br />
+    <span class="title">search</span><span class="result"
+      id="domSearch"></span><br />
   </div>
+  <h2>URL components from URL.js:</h2>
+  <div class="output">
+    <span class="title">href</span><span class="result" id="urlHref"></span><br
+    />
+    <span class="title">hash</span><span class="result" id="urlHash"></span><br
+    />
+    <span class="title">hostname</span><span class="result"
+      id="urlHostname"></span><br />
+    <span class="title">pathname</span><span class="result"
+      id="urlPathname"></span><br />
+    <span class="title">port</span><span class="result" id="urlPort"></span><br
+    />
+    <span class="title">protocol</span><span class="result"
+      id="urlProtocol"></span><br />
+    <span class="title">search</span><span class="result"
+      id="urlSearch"></span><br />
+  </div>
+
+  <script>
+
+    // Prepare the elements to output DOM properties
+    var domHref = document.getElementById("domHref");
+    var domHash = document.getElementById("domHash");
+    var domHostname = document.getElementById("domHostname");
+    var domPathname = document.getElementById("domPathname");
+    var domPort = document.getElementById("domPort");
+    var domProtocol = document.getElementById("domProtocol");
+    var domSearch = document.getElementById("domSearch");
+
+    // Prepare the elements to output URL class properties from URL.js
+
+    var urlHref = document.getElementById("urlHref");
+    var urlHash = document.getElementById("urlHash");
+    var urlHostname = document.getElementById("urlHostname");
+    var urlPathname = document.getElementById("urlPathname");
+    var urlPort = document.getElementById("urlPort");
+    var urlProtocol = document.getElementById("urlProtocol");
+    var urlSearch = document.getElementById("urlSearch");
+
+    function parse(input) {
+      parseDom(input);
+      parseUrl(input);
+      compare(urlHref, domHref);
+      compare(urlHash, domHash);
+      compare(urlHostname, domHostname);
+      compare(urlPathname, domPathname);
+      compare(urlPort, domPort);
+      compare(urlProtocol, domProtocol);
+      compare(urlSearch, domSearch);
+    }
+    function parseDom(input) {
+      var target = document.getElementById("target");
+      target.setAttribute("href", input); 
+
+      domHref.textContent = target.href;
+      domHash.textContent = target.hash;
+      domHostname.textContent = target.hostname;
+      domPathname.textContent = target.pathname;
+      domPort.textContent = target.port;
+      domProtocol.textContent = target.protocol;
+      domSearch.textContent = target.search;
+    }
+    function parseUrl(input) {
+      var base = document.baseURI;
+      var url = new URL(input, base);
+
+      urlHref.textContent = url.href;
+      urlHash.textContent = url.hash;
+      urlHostname.textContent = url.hostname;
+      urlPathname.textContent = url.pathname;
+      urlPort.textContent = url.port;
+      urlProtocol.textContent = url.protocol;
+      urlSearch.textContent = url.search;
+    }
+    function compare(x, y) {
+      if (x.textContent != y.textContent) {
+        x.className = "fail"; 
+        y.className = "fail"; 
+      }
+      else {
+        x.className = "pass"; 
+        y.className = "pass"; 
+      }
+    }
+    function color(element1, element2, color) {
+      element1.style.color = color;
+      element2.style.color = color;
+    }
+  </script>
 </html>
