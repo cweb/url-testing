@@ -50,21 +50,11 @@ function quote(str) {
 //++++++++++++++++++++
 
 function test_notImplemented(name) {
-  if (name === '') name = JSON.stringify(url);
   var t = async_test(name);
-  var iframe = document.createElement('iframe');
-  document.body.appendChild(iframe);
-  var doc = iframe.contentWindow.document;
-  iframe.onload = function(){
     t.step(function() {
         assert_equals(true, false);
         this.done();
         });
-    document.body.removeChild(iframe);
-  }
-  doc.open();
-  doc.write('<!doctype html><a href="' + quote(url) + '"></a>');
-  doc.close();
 }
 
 function test_simple(name, url, expect_url) {
