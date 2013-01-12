@@ -70,12 +70,12 @@
           test_components_relative(group.name + " - " + testcase.id, 
           testcase.base,
           testcase.rel,
-          testcase.expect_scheme,
-          testcase.expect_host,
+          testcase.expect_protocol,
+          testcase.expect_hostnamename,
           testcase.expect_port,
           testcase.expect_path,
-          testcase.expect_query,
-          testcase.expect_fragment);
+          testcase.expect_search,
+          testcase.expect_hash);
         }
         else if (group.name == "miscellaneous" ||
         group.name == "data-scheme"
@@ -83,12 +83,12 @@
           test_components(group.name + " - " + testcase.id, 
           testcase.url,
           testcase.expect_url,
-          testcase.expect_scheme,
-          testcase.expect_host,
+          testcase.expect_protocol,
+          testcase.expect_hostnamename,
           testcase.expect_port,
           testcase.expect_path,
-          testcase.expect_query,
-          testcase.expect_fragment);
+          testcase.expect_search,
+          testcase.expect_hash);
         }
         else if (group.name == "normalization" ||
         group.name == "percent-encoding" ||

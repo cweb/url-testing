@@ -95,7 +95,7 @@ function test_relative(name, base, rel, expect_rel) {
 }
 
 // Test components using a base href
-function test_components_relative(name, base, rel, expect_scheme, expect_host, expect_port, expect_path, expect_query, expect_fragment) {
+function test_components_relative(name, base, rel, expect_protocol, expect_hostnamename, expect_port, expect_path, expect_search, expect_hash) {
   if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
   var t = async_test(name);
   var iframe = document.createElement('iframe');
@@ -105,7 +105,7 @@ function test_components_relative(name, base, rel, expect_scheme, expect_host, e
     t.step(function() {
         var target = doc.getElementsByTagName('a')[0];
         var actual = [target.protocol, target.hostname, target.port, target.pathname, target.search, target.hash];
-        var expect = [expect_scheme, expect_host, expect_port, expect_path, expect_query, expect_fragment];
+        var expect = [expect_protocol, expect_hostnamename, expect_port, expect_path, expect_search, expect_hash];
         assert_array_equals(actual, expect);
         this.done();
         });
@@ -116,7 +116,7 @@ function test_components_relative(name, base, rel, expect_scheme, expect_host, e
   doc.close();
 }
 
-function test_components(name, url, expect_url, expect_scheme, expect_host, expect_port, expect_path, expect_query, expect_fragment) {
+function test_components(name, url, expect_url, expect_protocol, expect_hostnamename, expect_port, expect_path, expect_search, expect_hash) {
   if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
   var t = async_test(name);
   var iframe = document.createElement('iframe');
@@ -126,7 +126,7 @@ function test_components(name, url, expect_url, expect_scheme, expect_host, expe
     t.step(function() {
         var target = doc.getElementsByTagName('a')[0];
         var actual = [target.href, target.protocol, target.hostname, target.port, target.pathname, target.search, target.hash];
-        var expect = [expect_url, expect_scheme, expect_host, expect_port, expect_path, expect_query, expect_fragment];
+        var expect = [expect_url, expect_protocol, expect_hostnamename, expect_port, expect_path, expect_search, expect_hash];
         assert_array_equals(actual, expect);
         this.done();
         });

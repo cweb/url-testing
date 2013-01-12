@@ -45,7 +45,7 @@ var myscript = '<script>var xhr = new XMLHttpRequest(); xhr.open("GET", "httpget
                 'xhr.send(null); var response = JSON.parse(xhr.responseText);<' + '/script>';
 
 // Test components using a base href
-function test_components_relative(name, base, rel, expect_host, expect_path) {
+function test_components_relative(name, base, rel, expect_hostnamename, expect_path) {
   if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
   var t = async_test(name);
   var iframe = document.createElement('iframe');
@@ -71,7 +71,7 @@ function test_components_relative(name, base, rel, expect_host, expect_path) {
   doc.close();
 }
 
-function test_components(name, url, expect_host, expect_path) {
+function test_components(name, url, expect_hostnamename, expect_path) {
   if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
   var t = async_test(name);
   var iframe = document.createElement('iframe');
@@ -81,7 +81,7 @@ function test_components(name, url, expect_host, expect_path) {
     t.step(function() {
         var target = doc.getElementsByTagName('a')[0];
         var actual = [target.hostname, target.pathname];
-        var expect = [expect_host, expect_path];
+        var expect = [expect_hostnamename, expect_path];
         assert_array_equals(actual, expect);
         this.done();
         });
