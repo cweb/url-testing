@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>Live DOM URL Viewer</title>
     <meta name="author" content="Chris Weber">
     <meta name="copyright" content="&copy; 2013 Chris Weber">
     <meta name="description" content="Web browser test page for
@@ -8,7 +9,6 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="url.js"></script>
-
   </head>
   <h2>Enter a URL to parse:</h2>
   <p>The output below will display a URL's parsed components from both the
@@ -53,6 +53,7 @@
     <span class="title">search</span><span class="result"
       id="urlSearch"></span><br />
   </div>
+
 
   <script>
 
@@ -110,6 +111,7 @@
       urlProtocol.textContent = url.protocol;
       urlSearch.textContent = url.search;
     }
+
     function compare(x, y) {
       if (x.textContent != y.textContent) {
         x.className = "fail"; 

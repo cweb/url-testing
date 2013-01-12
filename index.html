@@ -1,104 +1,39 @@
-<!doctype html>
 <html>
   <head>
-    <title>run url tests</title>
-    <link rel="stylesheet" type="text/css" href="tests.css">
-    <link rel="stylesheet" href="http://w3c-test.org/resources/testharness.css">
-    <script src="http://w3c-test.org/resources/testharness.js"></script>
-    <script src="http://w3c-test.org/resources/testharnessreport.js"></script>
-    <script src="test.js"></script>
+    <meta name="author" content="Chris Weber">
+    <meta name="copyright" content="&copy; 2013 Chris Weber">
+    <meta name="description" content="Web browser test pages for
+    URL parsing">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="url.js"></script>
+    <title>Test pages for URL parsing</title>
   </head>
-  <body>
-    <h1>Note</h1>
-    <p>This page is still a work in progress.  TODO:</p>
-    <ul>
-      <li>Improve the expected results of each test case</li>
-      <li>Provide a descriptive comment with each test case</li>
-      <li>Reduce test cases, remove duplication</li>
-      <li>Hook up server-side GET request processing</li>
-      <li>correlate expected DOM results with HTTP request</li>
-    </ul>
-    <div id="log"></div>
-  </body>
-  <script>
+  <h2>Test pages for URL parsing</h2>
+  <p>URLs have been tricky little devils over the years.  Mainly because
+  various implementations have diverged in subtle details of parsing them.</p>
+  <p>The following test pages are designed to test URL parsing in the
+  described ways.</p>
+  <br />
+  <pre><a href="test-adhoc.html">test-adhoc.html</a></pre>
+  <p>Display a URL's parsed components from both the
+  browser's DOM, and from the <a href="https://github.com/annevk/url">URL.js
+    project</a> being prototyped for the <a
+    href="http://url.spec.whatwg.org/">WHATWG URL spec.</a></p>
+  <br />
+  <pre><a href="test-DOM.html">test-DOM.html</a></pre>
+  <p>Run all tests from <a
+    href="https://github.com/cweb/url-testing">urls.json</a> using <a
+    href="https://github.com/jgraham/testharness.js">testharness.js</a> to
+  compare the Web browser's DOM properties with the expected result.</p>
+  <br />
+  <pre><a href="test-HTTP.html">test-HTTP.html</a></pre>
+  <p class="fail">WARNING: This isn't implemented yet</p>
+  <p>Run all tests from <a
+    href="https://github.com/cweb/url-testing">urls.json</a> using <a
+    href="https://github.com/jgraham/testharness.js">testharness.js</a> to
+  compare the Web browser's DOM properties with the resultant HTTP request's
+  path and hostname parts.</p>
 
-
-    // Start your engines
-    init();
-
-    for (var i = 0; i < data.tests.group.length; i++) {
-      var group = data.tests.group[i];
-
-      for (var j = 0, len = group.test.length; j < len; j++) {
-        var testcase = group.test[j];
-        if (group.name == "anchor" ||
-        group.name == "host" ||
-        group.name == "idna2008" ||
-        group.name == "idna2003" ||
-        group.name == "ipv4" ||
-        group.name == "ipv6" ||
-        group.name == "mailto" ||
-        group.name == "path-url" ||
-        group.name == "path" ||
-        group.name == "port" ||
-        group.name == "query" ||
-        group.name == "scheme" ||
-        group.name == "standard-url" ||
-        group.name == "whitespace"
-        ) {
-          test_simple(group.name + " - " + testcase.id + ": testing \"" + testcase.url + 
-          "\" expecting \"" + testcase.expect_url + "\"", 
-          testcase.url,
-          testcase.expect_url);
-        }
-        else if (group.name == "file-http-base" ||
-        group.name == "file" ||
-        group.name == "relative-unix" ||
-        group.name == "relative-win" ||
-        group.name == "relative" ||
-        group.name == "trivial" 
-        ) {
-          test_relative(group.name + " - " + testcase.id, 
-          testcase.base,
-          testcase.rel,
-          testcase.expect_rel);
-        }
-        else if (group.name == "segments-from-data-url" ||
-        group.name == "sengments" ||
-        group.name == "trivial-segments" 
-        ) {
-          test_components_relative(group.name + " - " + testcase.id, 
-          testcase.base,
-          testcase.rel,
-          testcase.expect_scheme,
-          testcase.expect_host,
-          testcase.expect_port,
-          testcase.expect_path,
-          testcase.expect_query,
-          testcase.expect_fragment);
-        }
-        else if (group.name == "miscellaneous" ||
-        group.name == "data-scheme"
-        ) {
-          test_components(group.name + " - " + testcase.id, 
-          testcase.url,
-          testcase.expect_url,
-          testcase.expect_scheme,
-          testcase.expect_host,
-          testcase.expect_port,
-          testcase.expect_path,
-          testcase.expect_query,
-          testcase.expect_fragment);
-        }
-        else if (group.name == "normalization" ||
-        group.name == "percent-encoding" ||
-        group.name == "segments"
-        ) {
-
-          // TODO Test these
-
-        }
-      }
-    }
-  </script>
 </html>
