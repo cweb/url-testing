@@ -15,7 +15,10 @@
   <p>The output below will display a URL's parsed components from both the
   browser's DOM, and from the <a href="https://github.com/annevk/url">URL.js
     project</a> being done for the <a
-    href="http://url.spec.whatwg.org/">WHATWG URL spec.</a></p>
+    href="http://url.spec.whatwg.org/">WHATWG URL spec.</a>  The output will
+  be colored <span class="pass">dark green</span> unless a difference occurs between the two parsers in
+  which case the affected URL component will be colored <span
+    class="fail">red</span>.</p>
   <input type="text" value="http://example.com" class="input" id="url"
   onkeyup="parse(this.value)">  
   <a href="" id="target"></a>
