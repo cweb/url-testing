@@ -2,11 +2,11 @@
 <html>
   <head>
     <title>run url tests</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="http://w3c-test.org/resources/testharness.css">
-    <script src="http://w3c-test.org/resources/testharness.js"></script>
-    <script src="http://w3c-test.org/resources/testharnessreport.js"></script>
-    <script src="test.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/testharness.css">
+    <script src="js/testharness.js"></script>
+    <script src="js/testharnessreport.js"></script>
+    <script src="js/test-http.js"></script>
   </head>
   <body>
     <h1>Note</h1>
@@ -46,11 +46,11 @@
         group.name == "standard-url" ||
         group.name == "whitespace"
         ) {
-          test_simple(group.name + " - " + testcase.id + ": testing \"" + testcase.url + 
+/*          test_simple(group.name + " - " + testcase.id + ": testing \"" + testcase.url + 
           "\" expecting \"" + testcase.expect_url + "\"", 
           testcase.url,
           testcase.expect_url);
-        }
+*/        }
         else if (group.name == "file-http-base" ||
         group.name == "file" ||
         group.name == "relative-unix" ||
@@ -58,24 +58,20 @@
         group.name == "relative" ||
         group.name == "trivial" 
         ) {
-          test_relative(group.name + " - " + testcase.id, 
+/*          test_relative(group.name + " - " + testcase.id, 
           testcase.base,
           testcase.rel,
           testcase.expect_rel);
-        }
+*/        }
         else if (group.name == "segments-from-data-url" ||
-        group.name == "sengments" ||
+        group.name == "segments" ||
         group.name == "trivial-segments" 
         ) {
           test_components_relative(group.name + " - " + testcase.id, 
           testcase.base,
           testcase.rel,
-          testcase.expect_protocol,
           testcase.expect_hostnamename,
-          testcase.expect_port,
-          testcase.expect_path,
-          testcase.expect_search,
-          testcase.expect_hash);
+          testcase.expect_path);
         }
         else if (group.name == "miscellaneous" ||
         group.name == "data-scheme"
@@ -83,16 +79,11 @@
           test_components(group.name + " - " + testcase.id, 
           testcase.url,
           testcase.expect_url,
-          testcase.expect_protocol,
           testcase.expect_hostnamename,
-          testcase.expect_port,
-          testcase.expect_path,
-          testcase.expect_search,
-          testcase.expect_hash);
+          testcase.expect_path);
         }
         else if (group.name == "normalization" ||
-        group.name == "percent-encoding" ||
-        group.name == "segments"
+        group.name == "percent-encoding" 
         ) {
 
           // TODO Test these

@@ -21,7 +21,7 @@
       <li>Improve the expected results of each test case</li>
       <li>Provide a descriptive comment with each test case</li>
       <li>Reduce test cases, remove duplication</li>
-      <li>Implement testing for groups "normalization", "percent-encoding", and "segments"<li>
+      <li>Implement testing for groups "normalization" and "percent-encoding"<li>
     </ul>
     <div id="log"></div>
   </body>
@@ -63,41 +63,42 @@
         group.name == "relative" ||
         group.name == "trivial" 
         ) {
-          test_relative(group.name + " - " + testcase.id, 
+          test_relative(group.name + " - " + testcase.id + ": testing base \"" + testcase.base +
+          "\" with relative \"" + testcase.rel + "\"", 
           testcase.base,
           testcase.rel,
           testcase.expect_rel);
         }
         else if (group.name == "segments-from-data-url" ||
-        group.name == "sengments" ||
+        group.name == "segments" ||
         group.name == "trivial-segments" 
         ) {
-          test_components_relative(group.name + " - " + testcase.id, 
+          test_components_relative(group.name + " - " + testcase.id + ": testing base \"" + testcase.base +
+          "\" with relative \"" + testcase.rel + "\"", 
           testcase.base,
           testcase.rel,
-          testcase.expect_scheme,
-          testcase.expect_host,
+          testcase.expect_protocol,
+          testcase.expect_hostname,
           testcase.expect_port,
-          testcase.expect_path,
-          testcase.expect_query,
-          testcase.expect_fragment);
+          testcase.expect_pathname,
+          testcase.expect_search,
+          testcase.expect_hash);
         }
         else if (group.name == "miscellaneous" ||
         group.name == "data-scheme"
         ) {
-          test_components(group.name + " - " + testcase.id, 
+          test_components(group.name + " - " + testcase.id + ": testing \"" + testcase.url + "\"", 
           testcase.url,
           testcase.expect_url,
-          testcase.expect_scheme,
-          testcase.expect_host,
+          testcase.expect_protocol,
+          testcase.expect_hostname,
           testcase.expect_port,
-          testcase.expect_path,
-          testcase.expect_query,
-          testcase.expect_fragment);
+          testcase.expect_pathname,
+          testcase.expect_search,
+          testcase.expect_hash);
         }
         else if (group.name == "normalization" ||
-        group.name == "percent-encoding" ||
-        group.name == "segments"
+        group.name == "percent-encoding" 
         ) {
 
           // TODO Test these
