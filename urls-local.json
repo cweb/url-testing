@@ -1,0 +1,66 @@
+{
+  "tests": {
+    "desc": "A collection of URL test cases, compiled from Webkit's /fast/url tests, Julian Reschke, and other sources.",
+    "group": [
+    {
+      "name": "trivial-segments",
+      "link": "http://trac.webkit.org/browser/trunk/LayoutTests/fast/url/script-tests/trivial-segments.js",
+      "desc": "Test cases from Webkit's fast/url/trivial-segments.js",
+      "test": [
+      {
+        "id": "1",
+        "name": "",
+        "rel": "http://urltest.lookout.net/bar/foo",
+        "base": "http://urltest.lookout.net/foo/bar",
+        "expect_protocol": "http:",
+        "expect_hostname": "example.com",
+        "expect_port": "",
+        "expect_pathname": "/",
+        "expect_search": "",
+        "expect_hash": ""
+      }
+      ]
+    },
+    {
+      "name": "trivial",
+      "link": "http://trac.webkit.org/browser/trunk/LayoutTests/fast/url/script-tests/trivial.js",
+      "desc": "Test cases from Webkit's fast/url/trivial.js",
+      "test": [
+      {
+        "id": "1",
+        "name": "",
+        "base": "http://urltest.lookout.net/foo/bar",
+        "rel": "http://urltest.lookout.net/foo/bar?x=y&1=1/",
+        "expect_rel": "http://example.com/"
+      },
+      {
+        "id": "2",
+        "name": "",
+        "base": "http://urltest.lookout.net/foo/bar",
+        "rel": "/",
+        "expect_rel": "http://example.org/"
+      }
+      ]
+    },
+    {
+      "name": "miscellaneous",
+      "link": "#",
+      "desc": "Misc test cases",
+      "test": [
+      {
+        "id": "1",
+        "name": "",
+        "url": "http://foo.urltest.lookout.net/path/",
+        "expect_url": "http://user@example.com/",
+        "expect_protocol": "http:",
+        "expect_hostname": "example.com",
+        "expect_port": "80",
+        "expect_pathname": "/",
+        "expect_search": "",
+        "expect_hash": ""
+      }
+      ]
+    }
+    ]
+  }
+}
