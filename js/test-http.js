@@ -47,8 +47,11 @@ function quote(str) {
 // Testing functions
 //++++++++++++++++++++
 
-// Test components using a base href
-function test_components_relative(name, base, rel, expect_hostnamename, expect_path) {
+// Test components using a base href.
+// name = descriptive name of the test case
+// base = the base URI to set
+// (optional) rel = the relative URI to test
+function test_components(name, base, rel) {
   if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
   var myscript = '<script>var xhr = new XMLHttpRequest(); xhr.open("GET", "' + rel + '", false); ' +
                 'xhr.send(null); var response = JSON.parse(xhr.responseText);<' + '/script>';
@@ -74,8 +77,8 @@ function test_components_relative(name, base, rel, expect_hostnamename, expect_p
   doc.close();
 }
 
-function test_components(name, url, expect_hostnamename, expect_path) {
-  if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
+function test_simple(name, url) {
+  if (name === '') name = JSON.stringify(url);
   var myscript = '<script>var xhr = new XMLHttpRequest(); xhr.open("GET", "' + url + '", false); ' +
                 'xhr.send(null); var response = JSON.parse(xhr.responseText);<' + '/script>';
   var t = async_test(name);
@@ -86,7 +89,6 @@ function test_components(name, url, expect_hostnamename, expect_path) {
     t.step(function() {
         var target = doc.getElementsByTagName('a')[0];
         var domurl = [target.hostname, target.pathname];
-        var expect = [expect_hostnamename, expect_path];
         // The HTTP GET request
         var httpurl = [iframe.contentWindow.response.hostname, iframe.contentWindow.response.pathname];
         assert_array_equals(domurl, httpurl);

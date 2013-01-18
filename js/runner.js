@@ -117,7 +117,7 @@ function test_components_relative(name, base, rel, expect_protocol, expect_hostn
 }
 
 function test_components(name, url, expect_url, expect_protocol, expect_hostnamename, expect_port, expect_path, expect_search, expect_hash) {
-  if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
+  if (name === '') name = JSON.stringify(url);
   var t = async_test(name);
   var iframe = document.createElement('iframe');
   document.body.appendChild(iframe);

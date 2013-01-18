@@ -31,8 +31,7 @@
 
       for (var j = 0, len = group.test.length; j < len; j++) {
         var testcase = group.test[j];
-        if (group.name == "anchor" ||
-        group.name == "host" ||
+        if (group.name == "host" ||
         group.name == "idna2008" ||
         group.name == "idna2003" ||
         group.name == "ipv4" ||
@@ -46,11 +45,10 @@
         group.name == "standard-url" ||
         group.name == "whitespace"
         ) {
-/*          test_simple(group.name + " - " + testcase.id + ": testing \"" + testcase.url + 
+          test_simple(group.name + " - " + testcase.id + ": testing \"" + testcase.url + 
           "\" expecting \"" + testcase.expect_url + "\"", 
-          testcase.url,
-          testcase.expect_url);
-*/        }
+          testcase.url);
+        }
         else if (group.name == "file-http-base" ||
         group.name == "file" ||
         group.name == "relative-unix" ||
@@ -58,29 +56,27 @@
         group.name == "relative" ||
         group.name == "trivial" 
         ) {
-/*          test_relative(group.name + " - " + testcase.id, 
+          test_simple(group.name + " - " + testcase.id + ": testing base \"" +
+          testcase.base + 
+          "\" and relative \"" + testcase.rel + "\"", 
           testcase.base,
-          testcase.rel,
-          testcase.expect_rel);
-*/        }
+          testcase.rel);
+        }
         else if (group.name == "segments-from-data-url" ||
         group.name == "segments" ||
         group.name == "trivial-segments" 
         ) {
-          test_components_relative(group.name + " - " + testcase.id, 
+          test_components(group.name + " - " + testcase.id + ": testing base \"" +
+          testcase.base + "\" and relative "\"" + testcase.rel + "\"", 
           testcase.base,
-          testcase.rel,
-          testcase.expect_hostnamename,
-          testcase.expect_path);
+          testcase.rel);
         }
         else if (group.name == "miscellaneous" ||
         group.name == "data-scheme"
         ) {
-          test_components(group.name + " - " + testcase.id, 
-          testcase.url,
-          testcase.expect_url,
-          testcase.expect_hostnamename,
-          testcase.expect_path);
+          test_components(group.name + " - " + testcase.id + ": testing \"" +
+          testcase.url + "\"", 
+          testcase.url);
         }
         else if (group.name == "normalization" ||
         group.name == "percent-encoding" 

@@ -465,7 +465,7 @@
       {
         "id": "6",
         "name": "",
-        "url": "http://www.foo\u3002\" + \"bar.com/",
+        "url": "http://www.foo\u3002bar.com/",
         "expect_url": "http://www.foo.bar.com/"
       },
       {
