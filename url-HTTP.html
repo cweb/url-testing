@@ -9,14 +9,19 @@
     <script src="js/test-http.js"></script>
   </head>
   <body>
-    <h1>Note</h1>
-    <p>This page is still a work in progress.  TODO:</p>
+    <h1>Goal</h1>
+    <p>Test for discrepancy between a URL's parsed components as they appear in the DOM properties versus an HTTP GET request.</p>
+    <h1>Description</h1>
+    <p>This page tests how a URL's properties compare in the DOM and an HTTP GET request, using the following method:</p>
     <ul>
-      <li>Improve the expected results of each test case</li>
-      <li>Provide a descriptive comment with each test case</li>
-      <li>Reduce test cases, remove duplication</li>
-      <li>Hook up server-side GET request processing</li>
-      <li>correlate expected DOM results with HTTP request</li>
+    <li>Load test cases from <a herf="urls-local.json">urls-local.json</a></li>
+    <li>For each test case, create an iframe in the same origin as the parent document.</li>
+    <li>In the iframe, create an anchor element with the test case as href, e.g.:</li>
+    <pre>&lt;a href="http://urltest.lookout.net/foo?bar"&gt;&lt;/a&gt;</pre>
+    <li>In the iframe reate a script element with the test case as src, e.g.:</li>
+    <pre>&lt;script src="http://urltest.lookout.net/foo?bar"&gt;&lt;/script&gt;</pre>
+    <li>This host is setup with a wildcard DNS record, a mod_rewrite rule, and a CGI script so that any request that includes "urltest" in the hostname will return a javascript document with two variables: "hostname" and "pathname" with values taken from the HTTP GET request.</li>
+    <li>Compare the DOM properties of the anchor's href, with the two javascript variables returned from the HTTP GET request.</li>
     </ul>
     <div id="log"></div>
   </body>
@@ -45,37 +50,25 @@
         group.name == "standard-url" ||
         group.name == "whitespace"
         ) {
-          test_simple(group.name + " - " + testcase.id + ": testing \"" + testcase.url + 
-          "\" expecting \"" + testcase.expect_url + "\"", 
+          test_simple(group.name + " - " + testcase.id + ": testing " + testcase.url, 
           testcase.url);
         }
-        else if (group.name == "file-http-base" ||
-        group.name == "file" ||
-        group.name == "relative-unix" ||
-        group.name == "relative-win" ||
-        group.name == "relative" ||
+        else if (group.name == "relative" ||
         group.name == "trivial" 
         ) {
-          test_simple(group.name + " - " + testcase.id + ": testing base \"" +
-          testcase.base + 
-          "\" and relative \"" + testcase.rel + "\"", 
+          test_simple(group.name + " - " + testcase.id + ": testing base " + testcase.base + " and relative " + testcase.rel, 
           testcase.base,
           testcase.rel);
         }
-        else if (group.name == "segments-from-data-url" ||
-        group.name == "segments" ||
-        group.name == "trivial-segments" 
-        ) {
-          test_components(group.name + " - " + testcase.id + ": testing base \"" +
-          testcase.base + "\" and relative "\"" + testcase.rel + "\"", 
+        else if (group.name == "segments" ) {
+          test_components(group.name + " - " + testcase.id + ": testing base " + testcase.base + " and relative " + testcase.rel, 
           testcase.base,
           testcase.rel);
         }
         else if (group.name == "miscellaneous" ||
         group.name == "data-scheme"
         ) {
-          test_components(group.name + " - " + testcase.id + ": testing \"" +
-          testcase.url + "\"", 
+          test_components(group.name + " - " + testcase.id + ": testing " + testcase.url, 
           testcase.url);
         }
         else if (group.name == "normalization" ||

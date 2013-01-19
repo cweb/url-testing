@@ -2029,7 +2029,7 @@
       {
         "id": "3",
         "name": "",
-        "url": "http://www.example.com/?\\%02hello%7f bye",
+        "url": "http://www.example.com/?%02hello%7f bye",
         "expect_url": "http://www.example.com/?%02hello%7F%20bye"
       },
       {
@@ -2059,7 +2059,7 @@
       {
         "id": "8",
         "name": "",
-        "url": "http://www.example.com/?q=\\\"asdf\\\"",
+        "url": "http://www.example.com/?q=\"asdf\"",
         "expect_url": "http://www.example.com/?q=%22asdf%22"
       }
       ]

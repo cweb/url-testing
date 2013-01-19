@@ -8,7 +8,7 @@ function init() {
     return;
   }
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "urls.json", false);
+  xhr.open("GET", "urls-local.json", false);
   xhr.send(null);
 
   // Get the test cases from tests.json
@@ -53,8 +53,14 @@ function quote(str) {
 // (optional) rel = the relative URI to test
 function test_components(name, base, rel) {
   if (name === '') name = JSON.stringify(base) + " + " + JSON.stringify(rel);
-  var myscript = '<script>var xhr = new XMLHttpRequest(); xhr.open("GET", "' + rel + '", false); ' +
-                'xhr.send(null); var response = JSON.parse(xhr.responseText);<' + '/script>';
+  //var myscript = '<script>var xhr = new XMLHttpRequest(); xhr.open("GET", "' + rel + '", false); ' +
+  //              'xhr.send(null); var response = JSON.parse(xhr.responseText);<' + '/script>';
+
+  if (rel != undefined) {
+    var myscript = '<script src="' + quote(rel) + '"></script>';
+  }
+  else var myscript = '<script src="' + quote(url) + '"></script>';
+  
   var t = async_test(name);
   var iframe = document.createElement('iframe');
   document.body.appendChild(iframe);
@@ -63,11 +69,12 @@ function test_components(name, base, rel) {
     t.step(function() {
         // Get the element from the iframe
         var target = doc.getElementsByTagName('a')[0];
-        // The DOM parsed URL
-        var domurl = [target.hostname, target.pathname];
+        // We compare the DOM's pathname + search components to the HTTP 
+        // request's URI which also includes both.
+        var domurl = [target.hostname, target.pathname + target.search];
         // The HTTP GET request
-        var httpurl = [iframe.contentWindow.response.hostname, iframe.contentWindow.response.pathname];
-        assert_array_equals(domurl, httpurl);
+        var httpurl = [iframe.contentWindow.hostname, iframe.contentWindow.pathname];
+        assert_array_equals(httpurl, domurl);
         this.done();
         });
     document.body.removeChild(iframe);
@@ -79,19 +86,30 @@ function test_components(name, base, rel) {
 
 function test_simple(name, url) {
   if (name === '') name = JSON.stringify(url);
-  var myscript = '<script>var xhr = new XMLHttpRequest(); xhr.open("GET", "' + url + '", false); ' +
-                'xhr.send(null); var response = JSON.parse(xhr.responseText);<' + '/script>';
+  //var myscript = '<script>var xhr = new XMLHttpRequest(); xhr.open("GET", "' + quote(url) + '", false); ' +
+  //              'xhr.send(null); var response = JSON.parse(xhr.responseText);<' + '/script>';
+
+  var myscript = '<script src="' + quote(url) + '"></script>';
+  
   var t = async_test(name);
   var iframe = document.createElement('iframe');
+  iframe.setAttribute("name", name);
   document.body.appendChild(iframe);
   var doc = iframe.contentWindow.document;
   iframe.onload = function(){
     t.step(function() {
         var target = doc.getElementsByTagName('a')[0];
-        var domurl = [target.hostname, target.pathname];
+        // We compare the DOM's pathname + search components to the HTTP 
+        // request's URI which also includes both.
+        var domurl = [target.hostname, target.pathname + target.search];
         // The HTTP GET request
-        var httpurl = [iframe.contentWindow.response.hostname, iframe.contentWindow.response.pathname];
-        assert_array_equals(domurl, httpurl);
+        //var httpurl = [iframe.contentWindow.response.hostname, iframe.contentWindow.response.pathname];
+        // The browser will show an empthy pathname as "" while the GET request will look like "/"
+        if (iframe.contentWindow.pathname === "/") {
+//          iframe.contentWindow.pathname = "";
+        }
+        var httpurl = [iframe.contentWindow.hostname, iframe.contentWindow.pathname];
+        assert_array_equals(httpurl, domurl);
         this.done();
         });
     document.body.removeChild(iframe);

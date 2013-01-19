@@ -164,18 +164,6 @@
         "expect_url": "http://xn--%28-7ed.urltest.lookout.net/"
       },
       {
-        "id": "27",
-        "name": "",
-        "url": "http://go\\@ogle.com.urltest.lookout.net/",
-        "expect_url": "http://go@ogle.com.urltest.lookout.net/"
-      },
-      {
-        "id": "28",
-        "name": "",
-        "url": "http://go/@ogle.com.urltest.lookout.net/",
-        "expect_url": "http://go@ogle.com.urltest.lookout.net/"
-      },
-      {
         "id": "29",
         "name": "",
         "url": "http://urltest.lookout.net::==80::==443::/",
@@ -764,7 +752,7 @@
       {
         "id": "3",
         "name": "",
-        "url": "http://urltest.lookout.net/?\\%02hello%7f bye",
+        "url": "http://urltest.lookout.net/?%02hello%7f bye",
         "expect_url": "http://urltest.lookout.net/?%02hello%7F%20bye"
       },
       {
@@ -794,7 +782,7 @@
       {
         "id": "8",
         "name": "",
-        "url": "http://urltest.lookout.net/?q=\\\"asdf\\\"",
+        "url": "http://urltest.lookout.net/?q=\"asdf\"",
         "expect_url": "http://urltest.lookout.net/?q=%22asdf%22"
       }
       ]
@@ -915,13 +903,6 @@
         "base": "http://urltest.lookout.net/a",
         "rel": "\\\\b\\\\c\\\\d",
         "expect_rel": "http://urltest.lookout.net/b/c/d"
-      },
-      {
-        "id": "17",
-        "name": "",
-        "base": "http://host/a",
-        "rel": "/b/../c",
-        "expect_rel": "http://host/c"
       },
       {
         "id": "18",
@@ -1455,8 +1436,8 @@
       {
         "id": "42",
         "name": "",
-        "rel": "http://foo.com:b@d/",
-        "base": "http://example.org/foo/bar",
+        "rel": "http://foo.urltest.lookout.net:b@d/",
+        "base": "http://urltest.lookout.net/foo/bar",
         "expect_protocol": "http:",
         "expect_hostname": "d",
         "expect_port": "",
@@ -1899,25 +1880,6 @@
         "charset": "iso-8859-1",
         "url": "http://urltest.lookout.net/?D%C3%BCrst",
         "expect_url": "http://urltest.lookout.net/?D%C3%BCrst"
-      }
-      ]
-    },
-    {
-      "name": "miscellaneous",
-      "link": "#",
-      "desc": "Misc test cases",
-      "test": [
-      {
-        "id": "1",
-        "name": "",
-        "url": "http://user%urltest.lookout.net/",
-        "expect_url": "http://user@urltest.lookout.net/",
-        "expect_protocol": "http:",
-        "expect_hostname": "urltest.lookout.net",
-        "expect_port": "80",
-        "expect_pathname": "/",
-        "expect_search": "",
-        "expect_hash": ""
       }
       ]
     }
