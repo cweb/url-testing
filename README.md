@@ -45,6 +45,7 @@ var hostname = "foo.urltest.lookout.net"
 ```
 
 - __DNS wildcard__ record for the host
+
 For this to work, the DNS must be setup with a wildcard __A__ record so that requests to *.lookout.net all resolve
 to the same IP address.
 
